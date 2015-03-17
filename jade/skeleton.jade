@@ -11,13 +11,21 @@ head.no-js(lang='en')
     script(src='js/vendor/modernizr-2.8.3-respond-1.4.2.min.js')
 
   body
-    nav.navbar.navbar-inverse.navbar-fixed-top
-      .container
+
+    .navbar.navbar-inverse.navbar-static-top
+      .container-fluid
         .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
 
-          a.pull-left(href='/')
-            img(src='favicon.png', style='margin-top: 10px; padding-right: 10px')
+          .navbar-brand.navbar-brand-left
+            a(href='/')
+              img(src='favicon.png', style='margin-top: -5px; padding-right: 10px')
 
+        .collapse.navbar-collapse
           ul.nav.navbar-nav
             li
               a(href='sangu-package') Sangu Package
