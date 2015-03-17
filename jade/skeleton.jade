@@ -1,0 +1,100 @@
+doctype html.no-js(lang='en')
+head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    link(rel='icon', type='image/png', href='favicon.png')
+    title Sangu - Tribal Wars Masters
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='css/vendor/bootstrap.min.css')
+    link(rel='stylesheet', href='css/vendor/bootstrap-theme.min.css')
+    link(rel='stylesheet', href='css/main.css')
+    script(src='js/vendor/modernizr-2.8.3-respond-1.4.2.min.js')
+  body
+    nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+      .container
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-target='#navbar')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.pull-left(href='#')
+            img(src='favicon.png', style='margin-top: 10px; padding-right: 10px')
+
+          ul.nav.navbar-nav
+            li
+              a(href='sangu-package') Sangu Package
+            li
+              a(href='twtactics') TW Tactics
+            li
+              a(href='support') Support
+            li
+              a(href='about') About
+    .container
+      .row
+        .col-md-6
+          h2
+            | Sangu Package
+            small (NL server only)
+          p Greasemonkey extension for Tribal Wars bullies
+          p
+            a.btn.btn-success.btn-lg(href='api/sangupackage.user.js') Download
+            a.btn.btn-default.btn-lg(href='sangu-package', role='button') Learn more &raquo;
+        .col-md-6
+          h2
+            | TW Tactics
+            small (All servers)
+          p
+            | Desktop app for TW Warlords: Explore your world, plan attacks, monitor your enemies&apos; progress and more
+          p
+            a.btn.btn-success.btn-lg(href='api/twtactics1.zip') Download
+            a.btn.btn-default.btn-lg(href='#', role='button') Learn more &raquo;
+      hr
+      .row
+        .col-md-6
+          img(src='img/sangu-tribe-logo.jpeg')
+          h2 Sangu: The Tribe
+          p
+            | Starting from its inception, Sangu was the dominating tribe
+            | on the
+            a(href='http://nl.twstats.com/nl10/index.php?page=tribe&id=22147') classic NL10 server
+            | .
+            |           Never quite first in points but always at war with the tribe that was.
+            |           Both the Sangu Package and TWTactics are tools used extensively
+            |           and successfully by many Sangu players.
+          p
+            a.btn.btn-default(href='about', role='button') Learn more &raquo;
+        .col-md-6
+          img(src='img/github.png')
+          h2 Contribute
+          p
+            | The source code for both
+            a(href='https://github.com/SanguPackage/Script') Sangu Package
+            |             and
+            a(href='https://github.com/SanguPackage/TWTactics') TW Tactics
+            |  is available
+            |             on
+            a(href='https://github.com/SanguPackage') GitHub
+            | .
+          p
+            | If you are new to JavaScript, some guidelines and information about how to start building a script
+            | for Tribal Wars can be found
+            a(href='http://forum.tribalwars.nl/showthread.php?117006-Hoe-ontwikkel-je-een-TW-script') on the forum (Dutch)
+            | .
+          p
+            a.btn.btn-default(href='support', role='button') Learn more &raquo;
+      hr
+      footer
+        p &copy; Sangu 2015
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+    script.
+      window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\\/script>')
+    script(src='js/vendor/bootstrap.min.js')
+    script(src='js/main.js')
+    script.
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-30075487-3','auto');ga('send','pageview');

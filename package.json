@@ -1,0 +1,14 @@
+{
+  "name": "sangu-site-new",
+  "version": "1.0.0",
+  "description": "Website for SanguPackage and TWTactics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wouter Van Schandevijl",
+  "license": "ISC",
+  "dependencies": {
+    "jade": "^1.9.2"
+  }
+}
