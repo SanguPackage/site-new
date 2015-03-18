@@ -10,8 +10,8 @@ body {
     margin: 20px auto;
     position: relative;
     border: 10px solid #fff;
-    width: 400px;
-    height: 140px;
+    width: 600px;
+    height: 400px;
     -webkit-border-radius: 5px;
        -moz-border-radius: 5px;
             border-radius: 5px;
@@ -20,6 +20,20 @@ body {
             box-shadow: 0 0 2px #999;
 }
 
+
+.jcarousel-wrapper .photo-credits {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+    opacity: .66;
+}
+
+.jcarousel-wrapper .photo-credits a {
+    color: #fff;
+}
 
 /** Carousel **/
 
