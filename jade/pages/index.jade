@@ -7,23 +7,23 @@ block content
         h2 Sangu Package&nbsp;<small>(NL server only)</small>
         p Greasemonkey extension for Tribal Wars bullies
         p.
-          <a class="btn btn-success btn-lg" href="api/sangupackage.user.js">Download</a>
-          <a class="btn btn-default btn-lg" href="sangu-package">Learn more &raquo;</a>
-
-        div.
-          <div class="jcarousel-wrapper">
+          <div class="sp-jcarousel-wrapper">
             <div class="jcarousel">
                 <ul>
                     <li><img src="img/sp/index/maintagger-thumb.png" width="400" height="122" alt=""></li>
-                    <li><img src="img/sp/index/overview-troops-own.png" width="400" height="122" alt=""></li>
-                    <li><img src="img/sp/index/place-troops-back.png" width="400" height="122" alt=""></li>
-                    <li><img src="img/sp/index/sangu-settings.png" width="400" height="122" alt=""></li>
+                    <li><img src="img/sp/index/overview-troops-own-thumb.png" width="400" height="122" alt=""></li>
+                    <li><img src="img/sp/index/header-thumb.png" width="400" height="122" alt=""></li>
+                    <li><img src="img/sp/index/sangu-settings-thumb.png" width="400" height="122" alt=""></li>
                 </ul>
             </div>
 
             <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
             <a href="#" class="jcarousel-control-next">&rsaquo;</a>
           </div>
+
+        .pull-right.
+          <a class="btn btn-success btn-lg" href="api/sangupackage.user.js">Download</a>
+          <a class="btn btn-default btn-lg" href="sangu-package">Learn more &raquo;</a>
 
 
       .col-md-6
@@ -41,33 +41,7 @@ block content
   .container
     .row
       .col-sm-6
-        h2 Sangu: The Tribe
-        img(src='img/sangu-tribe-logo.jpeg')
-
-        p.
-          Starting from its inception, Sangu was the dominating tribe
-          on the <a href="http://nl.twstats.com/nl10/index.php?page=tribe&id=22147">classic NL10 server</a>.
-          Never quite first in points but always at war with the tribe that was.
-          Both the Sangu Package and TWTactics are tools used extensively
-          and successfully by many Sangu players.
-
-        p.
-          <a class="btn btn-default" href="about">Learn more &raquo;</a>
-
-
+        include ./index/tribe-sangu
 
       .col-sm-6
-        h2 Contribute
-        img(src='img/github.png', style='float:left;width:167px;height:167px; margin-right:10px;')
-        p.
-          The source code for both <a href="https://github.com/SanguPackage/Script">Sangu Package</a>
-          and <a href="https://github.com/SanguPackage/TWTactics">TW Tactics</a> is available
-          on <a href="https://github.com/SanguPackage">GitHub</a>.
-
-        p.
-          If you are new to JavaScript, some guidelines and information about how to start building a script
-          for Tribal Wars can be found
-            <a href="http://forum.tribalwars.nl/showthread.php?117006-Hoe-ontwikkel-je-een-TW-script">on the forum (Dutch)</a>
-
-        p.
-          <a class="btn btn-default" href="support">Learn more &raquo;</a>
+        include ./index/contribute
