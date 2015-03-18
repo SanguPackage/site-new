@@ -3,15 +3,53 @@ extends ../skeleton.jade
 block content
   .container
     .row
-      .col-sm-6
+      .col-md-6
         h2 Sangu Package&nbsp;<small>(NL server only)</small>
         p Greasemonkey extension for Tribal Wars bullies
         p.
           <a class="btn btn-success btn-lg" href="api/sangupackage.user.js">Download</a>
           <a class="btn btn-default btn-lg" href="sangu-package">Learn more &raquo;</a>
 
+        p.
+          <div class="connected-carousels">
+            <div class="stage">
+                <div class="carousel carousel-stage">
+                    <ul>
+                        <li><img src="img/sp/index/maintagger.png" width="600" height="400" alt=""></li>
+                        <li><img src="img/sp/index/overview-troops-own.png" width="600" height="400" alt=""></li>
+                        <li><img src="img/sp/index/place-troops-back.png" width="600" height="400" alt=""></li>
+                        <li><img src="img/sp/index/sangu-settings.png" width="600" height="400" alt=""></li>
+                    </ul>
+                </div>
+                <p class="photo-credits">
+                    Photos by <a href="http://www.mw-fotografie.de">Marc Wiegelmann</a>
+                </p>
+                <a href="#" class="prev prev-stage"><span>&lsaquo;</span></a>
+                <a href="#" class="next next-stage"><span>&rsaquo;</span></a>
+            </div>
 
-      .col-sm-6
+            <div class="navigation">
+                <a href="#" class="prev prev-navigation">&lsaquo;</a>
+                <a href="#" class="next next-navigation">&rsaquo;</a>
+                <div class="carousel carousel-navigation">
+                    <ul>
+                        <li><img src="img/sp/index/maintagger-thumb.png" width="50" height="50" alt=""></li>
+                        <li><img src="../_shared/img/img2_thumb.jpg" width="50" height="50" alt=""></li>
+                        <li><img src="../_shared/img/img3_thumb.jpg" width="50" height="50" alt=""></li>
+                        <li><img src="../_shared/img/img4_thumb.jpg" width="50" height="50" alt=""></li>
+                        <li><img src="../_shared/img/img5_thumb.jpg" width="50" height="50" alt=""></li>
+                        <li><img src="../_shared/img/img6_thumb.jpg" width="50" height="50" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+
+
+        p
+          img(src='img/sp/index/maintagger-thumb.png')
+
+
+      .col-md-6
         h2 TW Tactics&nbsp;<small>(All servers)</small>
         p.
           Desktop app for TW Warlords: Explore your world, plan attacks, monitor your enemies&apos;
