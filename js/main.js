@@ -23,6 +23,8 @@
             .jcarouselControl({
                 target: '+=1'
             });
+
+
     });
 })(jQuery);
 

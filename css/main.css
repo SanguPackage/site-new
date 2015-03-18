@@ -4,14 +4,14 @@ body {
 
 
 
-
+/** Index page: sangu package carousel **/
 
 .sp-jcarousel-wrapper {
     margin: 20px auto;
     position: relative;
     border: 10px solid #fff;
     width: 420px;
-    height: 140px;
+    height: 160px;
     -webkit-border-radius: 5px;
        -moz-border-radius: 5px;
             border-radius: 5px;
@@ -45,7 +45,7 @@ body {
 .jcarousel-control-prev,
 .jcarousel-control-next {
     position: absolute;
-    top: 40px;
+    top: 60px; /* TODO: SASS: when .sp-jcarousel-wrapper height changes, this value needs to change aswell */
     width: 30px;
     height: 30px;
     text-align: center;
