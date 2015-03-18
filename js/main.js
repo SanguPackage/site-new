@@ -1,6 +1,13 @@
+//http://sorgalla.com/jcarousel/docs/
+
 (function($) {
     $(function() {
-        $('.jcarousel').jcarousel();
+    		// TODO: implement an auto scrollback
+        $('.jcarousel')
+          .jcarousel()
+          .jcarouselAutoscroll({
+            interval: 3000
+        });
 
         $('.jcarousel-control-prev')
             .on('jcarouselcontrol:active', function() {
