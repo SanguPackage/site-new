@@ -71,6 +71,12 @@ body {
     right: -27px;
 }
 
+.jcarousel-control-prev:hover,
+.jcarousel-control-next:hover {
+    text-decoration: none;
+    color: white;
+}
+
 .jcarousel-control-prev:hover span,
 .jcarousel-control-next:hover span {
     display: block;
