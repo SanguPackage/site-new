@@ -97,3 +97,103 @@ section {
     opacity: .5;
     cursor: default;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navigation {
+    width: 260px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.carousel {
+    overflow: hidden;
+    position: relative;
+
+    height: 60px;
+    width: 240px;
+    background: #fff;
+    border: 10px solid #fff;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 0 0 2px #999;
+       -moz-box-shadow: 0 0 2px #999;
+            box-shadow: 0 0 2px #999;
+}
+
+.carousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel li {
+    cursor: pointer;
+    float: left;
+}
+
+.carousel li img {
+    display: block;
+    border: 5px solid #fff;
+}
+
+.carousel li.active img {
+    border-color: #ccc;
+}
+
+/** Navigation carousel controls **/
+
+.prev,
+.next {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 16px/29px Arial, sans-serif;
+    -webkit-border-radius: 30px;
+       -moz-border-radius: 30px;
+            border-radius: 30px;
+    -webkit-box-shadow: 0 0 2px #999;
+       -moz-box-shadow: 0 0 2px #999;
+            box-shadow: 0 0 2px #999;
+}
+
+.prev {
+    left: -15px;
+    top: 22px;
+    text-indent: 6px;
+}
+
+.next {
+    right: -15px;
+    top: 22px;
+    text-indent: 20px;
+}
+
+.prev.inactive,
+.next.inactive {
+    opacity: .5;
+    cursor: default;
+}
