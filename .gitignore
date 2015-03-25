@@ -1,6 +1,2 @@
 node_modules/
-index.html
-about.html
-sangu-package.html
-twtactics.html
-support.html
+site/*.html
