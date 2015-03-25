@@ -12,26 +12,27 @@ section {
     width: 420px;
 }
 
+
+
 #sp-jcarousel-wrapper {
-	margin: 10px auto;
+    width: 420px;
+    margin: 20px auto;
     position: relative;
-    border: 10px solid #fff;
+}
+
+.jcarousel {
+    overflow: hidden;
+    position: relative;
     width: 420px;
     height: 160px;
+    background: #fff;
+    border: 10px solid #fff;
     -webkit-border-radius: 5px;
        -moz-border-radius: 5px;
             border-radius: 5px;
     -webkit-box-shadow: 0 0 2px #999;
        -moz-box-shadow: 0 0 2px #999;
             box-shadow: 0 0 2px #999;
-}
-
-
-/** Carousel **/
-
-.jcarousel {
-    position: relative;
-    overflow: hidden;
 }
 
 .jcarousel ul {
@@ -43,128 +44,26 @@ section {
 }
 
 .jcarousel li {
-    float: left;
-}
-
-/** Carousel Controls **/
-
-.jcarousel-control-prev,
-.jcarousel-control-next {
-    position: absolute;
-    top: 60px; /* TODO: SASS: when .sp-jcarousel-wrapper height changes, this value needs to change aswell */
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    background: #4E443C;
-    color: #fff;
-    text-decoration: none;
-    text-shadow: 0 0 1px #000;
-    font: 24px/27px Arial, sans-serif;
-    -webkit-border-radius: 30px;
-       -moz-border-radius: 30px;
-            border-radius: 30px;
-    -webkit-box-shadow: 0 0 2px #999;
-       -moz-box-shadow: 0 0 2px #999;
-            box-shadow: 0 0 2px #999;
-}
-
-.jcarousel-control-prev {
-    left: -26px;
-}
-
-.jcarousel-control-next {
-    right: -27px;
-}
-
-/* TODO: on mouseout the underline is still there; */
-.jcarousel-control-prev:hover,
-.jcarousel-control-prev,
-.jcarousel-control-prev:visited,
-.jcarousel-control-next:visited,
-.jcarousel-control-next,
-.jcarousel-control-next:hover {
-    text-decoration: none;
-    color: white;
-}
-
-.jcarousel-control-prev:hover span,
-.jcarousel-control-next:hover span {
-    display: block;
-}
-
-.jcarousel-control-prev.inactive,
-.jcarousel-control-next.inactive {
-    opacity: .5;
-    cursor: default;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.navigation {
-    width: 260px;
-    margin: 20px auto;
-    position: relative;
-}
-
-.carousel {
-    overflow: hidden;
-    position: relative;
-
-    height: 60px;
-    width: 240px;
-    background: #fff;
-    border: 10px solid #fff;
-    -webkit-border-radius: 5px;
-       -moz-border-radius: 5px;
-            border-radius: 5px;
-    -webkit-box-shadow: 0 0 2px #999;
-       -moz-box-shadow: 0 0 2px #999;
-            box-shadow: 0 0 2px #999;
-}
-
-.carousel ul {
-    width: 20000em;
-    position: relative;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.carousel li {
     cursor: pointer;
     float: left;
 }
 
-.carousel li img {
+.jcarousel li img {
     display: block;
     border: 5px solid #fff;
 }
 
-.carousel li.active img {
+.jcarousel li.active img {
     border-color: #ccc;
 }
 
 /** Navigation carousel controls **/
 
-.prev,
-.next {
+.jcarousel-control-prev,
+.jcarousel-control-next {
     display: block;
     position: absolute;
+    top: 60px;
     width: 30px;
     height: 30px;
     background: #4E443C;
@@ -180,20 +79,19 @@ section {
             box-shadow: 0 0 2px #999;
 }
 
-.prev {
+.jcarousel-control-prev {
     left: -15px;
-    top: 22px;
     text-indent: 6px;
 }
 
-.next {
+.jcarousel-control-next {
     right: -15px;
-    top: 22px;
     text-indent: 20px;
+
 }
 
-.prev.inactive,
-.next.inactive {
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
     opacity: .5;
     cursor: default;
 }
