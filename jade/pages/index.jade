@@ -2,7 +2,7 @@ extends ../skeleton.jade
 
 mixin carouselImg(img, text, height)
   li
-    .text-muted= text
+    .text-muted!= text
     a.popup-thumbnail(href='#', data-img='img/sp/index/'+img+'.png')
       img(src='img/sp/index/'+img+'-thumb.png', width='400', height=height)
 
