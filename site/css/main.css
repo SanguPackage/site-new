@@ -2,12 +2,18 @@ body {
 	padding-bottom: 15px;
 }
 
-
-
 /** Index page: sangu package carousel **/
 
-.sp-jcarousel-wrapper {
-	 margin: 10px auto;
+.small-to-h2 {
+    margin-top: -12px;
+}
+
+section {
+    width: 420px;
+}
+
+#sp-jcarousel-wrapper {
+	margin: 10px auto;
     position: relative;
     border: 10px solid #fff;
     width: 420px;

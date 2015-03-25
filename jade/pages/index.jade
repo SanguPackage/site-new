@@ -11,13 +11,13 @@ block content
   .container
     .row
       .col-md-6
-        h2 Sangu Package&nbsp;<small>(NL server only)</small>
-        p.small.text-muted Huidige versie: 8.33.1
+        section
+          h2 Sangu Package&nbsp;<small>(NL server only)</small>
+          .small-to-h2.small.text-muted Huidige versie: 8.33.1
 
-        p Het gekende en geliefde package :)
+          p Het gekende en geliefde package :)
 
-        div
-          .sp-jcarousel-wrapper
+          #sp-jcarousel-wrapper
             .jcarousel
               ul
                 +carouselImg('maintagger', "Taggers die naadloos samensmelten in de bestaande pagina's", 122)
@@ -28,27 +28,31 @@ block content
             a.jcarousel-control-prev(href="#") &lsaquo;
             a.jcarousel-control-next(href="#") &rsaquo;
 
-            .clearfix.
-              <a class="btn btn-success btn-lg pull-right" href="api/sangupackage.user.js">Downloaden</a>
-              <a class="btn btn-default btn-lg pull-right" href="sangu-package">Tutorials &raquo;</a>
+          .clearfix
+            .pull-right.
+              <a class="btn btn-success btn-lg" href="api/sangupackage.user.js">Downloaden</a>
+              <a class="btn btn-default btn-lg" href="sangu-package">Tutorials &raquo;</a>
 
 
       .col-md-6
-        h2 TW Tactics&nbsp;<small>(All servers)</small>
-        p.
-          Desktop app for TW Warlords: Explore your world, plan attacks, monitor your enemies&apos;
-          progress and more
+        section
+          h2 TW Tactics&nbsp;<small>(All servers)</small>
+          p.
+            Desktop app for TW Warlords: Explore your world, plan attacks, monitor your enemies&apos;
+            progress and more
 
-        p.
-          <a class="btn btn-success btn-lg" href="api/twtactics1.zip">Download</a>
-          <a class="btn btn-default btn-lg" href="#">Learn more &raquo;</a>
+          p.
+            <a class="btn btn-success btn-lg" href="api/twtactics1.zip">Download</a>
+            <a class="btn btn-default btn-lg" href="#">Learn more &raquo;</a>
 
   hr
 
   .container
     .row
       .col-sm-6
-        include ../includes/index/tribe-sangu
+        section
+          include ../includes/index/tribe-sangu
 
       .col-sm-6
-        include ../includes/index/contribute
+        section
+          include ../includes/index/contribute
