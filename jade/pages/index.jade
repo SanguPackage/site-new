@@ -3,8 +3,8 @@ extends ../skeleton.jade
 mixin carouselImg(img, text, height)
   li
     .text-muted= text
-    a(href='img/sp/index/'+img+'.png')
-      img(src='img/sp/index/'+img+'.png', width='400', height=height)
+    a.popup-thumbnail(href='#', data-img='img/sp/index/'+img+'.png')
+      img(src='img/sp/index/'+img+'-thumb.png', width='400', height=height)
 
 
 block content
@@ -20,10 +20,10 @@ block content
           .sp-jcarousel-wrapper
             .jcarousel
               ul
-                +carouselImg('maintagger-thumb', "Taggers die naadloos samensmelten in de bestaande pagina's", 122)
-                +carouselImg('overview-troops-own-thumb', 'Saaie troepen overzichtspagina -&gt; kapabele aanvalsplanner', 122)
-                +carouselImg('header-thumb', 'Ton van kleine gadgets', 70)
-                +carouselImg('sangu-settings-thumb', 'Ongeveer alles is instelbaar!', 122)
+                +carouselImg('maintagger', "Taggers die naadloos samensmelten in de bestaande pagina's", 122)
+                +carouselImg('overview-troops-own', 'Saaie troepen overzichtspagina -&gt; kapabele aanvalsplanner', 122)
+                +carouselImg('header', 'Ton van kleine gadgets', 70)
+                +carouselImg('sangu-settings', 'Ongeveer alles is instelbaar!', 122)
 
             a.jcarousel-control-prev(href="#") &lsaquo;
             a.jcarousel-control-next(href="#") &rsaquo;
