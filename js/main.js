@@ -2,9 +2,10 @@
 
 (function($) {
     $(function() {
-    		// TODO: implement an auto scrollback
         $('.jcarousel')
-          .jcarousel()
+          .jcarousel({
+          	wrap: 'circular'
+          })
           .jcarouselAutoscroll({
             interval: 3000
         });

@@ -7,7 +7,7 @@ body {
 /** Index page: sangu package carousel **/
 
 .sp-jcarousel-wrapper {
-    margin: 20px auto;
+	 margin: 10px auto;
     position: relative;
     border: 10px solid #fff;
     width: 420px;

@@ -1,38 +1,32 @@
 extends ../skeleton.jade
 
+mixin carouselImg(img, text, height)
+  li
+    .text-muted= text
+    a(href='img/sp/index/'+img+'.png')
+      img(src='img/sp/index/'+img+'.png', width='400', height=height)
+
+
 block content
   .container
     .row
       .col-md-6
         h2 Sangu Package&nbsp;<small>(NL server only)</small>
-        p Het gekende en geliefde package
-        p Huidige versie:
-        p.
-          <div class="sp-jcarousel-wrapper">
-            <div class="jcarousel">
-                <ul>
-                    <li>
-                      <div class="text-muted">Taggers die naadloos samensmelten in de bestaande pagina's</div>
-                      <img src="img/sp/index/maintagger-thumb.png" width="400" height="122" alt="">
-                    </li>
-                    <li>
-                      <div class="text-muted">Saaie troepen overzichtspagina -&gt; kapabele aanvalsplanner</div>
-                      <img src="img/sp/index/overview-troops-own-thumb.png" width="400" height="122" alt="">
-                    </li>
-                    <li>
-                      <div class="text-muted">Ton van kleine gadgets</div>
-                      <img src="img/sp/index/header-thumb.png" width="400" height="122" alt="">
-                    </li>
-                    <li>
-                      <div class="text-muted">Ongeveer alles is instelbaar!</div>
-                      <img src="img/sp/index/sangu-settings-thumb.png" width="400" height="122" alt="">
-                    </li>
-                </ul>
-            </div>
+        p.small.text-muted Huidige versie: 8.33.1
 
-            <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
-            <a href="#" class="jcarousel-control-next">&rsaquo;</a>
-          </div>
+        p Het gekende en geliefde package :)
+
+        p
+          .sp-jcarousel-wrapper
+            .jcarousel
+              ul
+                +carouselImg('maintagger-thumb', "Taggers die naadloos samensmelten in de bestaande pagina's", 122)
+                +carouselImg('overview-troops-own-thumb', 'Saaie troepen overzichtspagina -&gt; kapabele aanvalsplanner', 122)
+                +carouselImg('header-thumb', 'Ton van kleine gadgets', 70)
+                +carouselImg('sangu-settings-thumb', 'Ongeveer alles is instelbaar!', 122)
+
+            a.jcarousel-control-prev(href="#") &lsaquo;
+            a.jcarousel-control-next(href="#") &rsaquo;
 
         .pull-right.
           <a class="btn btn-success btn-lg" href="api/sangupackage.user.js">Downloaden</a>
