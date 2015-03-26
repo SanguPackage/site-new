@@ -1,6 +1,7 @@
-/*  MANUAL CHANGES TO THIS LIBRARY:
- *  -> Added a options.updatePopup callback to set the content of the popup
+/*  MANUAL CHANGES TO THIS LIBRARY: (original source is Coffeescript)
+ *  -> Added a options.updatePopup callback to change the content of the popup
  *  -> Added closePopup call for any keypress
+ *  -> Added callback on popupclose
  *
  *  jQuery fullscreen popup - v0.0.1b
  *  Simple fullscreen popup plugin
@@ -24,7 +25,8 @@
       contentWrapperClass: "fsp-content",
       closePopupClass: "fsp-close",
       animationSpeed: 200,
-      updatePopup: null // function(targetPopupElement, elementClicked)
+      updatePopup: null, // function(targetPopupElement, elementClicked)
+      close: null
     };
     FSP = (function() {
       function FSP(element, options) {
@@ -117,6 +119,10 @@
 
       FSP.prototype.closePopup = function(event) {
         this.body.off('keydown.popup');
+
+        if (this.options.close) {
+          this.options.close();
+        }
 
         var self;
         event.preventDefault();

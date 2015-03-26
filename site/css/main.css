@@ -75,11 +75,14 @@ section {
     position: relative;
 }
 
+#sp-jcarousel {
+    width: 420px;
+    height: 160px;
+}
+
 .jcarousel {
     overflow: hidden;
     position: relative;
-    width: 420px;
-    height: 160px;
     background: #fff;
     border: 10px solid #fff;
     -webkit-border-radius: 5px;
