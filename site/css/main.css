@@ -90,8 +90,23 @@ section {
 
 }
 
-.jcarousel-control-prev.inactive,
-.jcarousel-control-next.inactive {
+.jcarousel-control-prev,
+.jcarousel-control-prev:hover,
+.jcarousel-control-prev:link,
+.jcarousel-control-prev:active,
+.jcarousel-control-prev:visited,
+
+.jcarousel-control-next,
+.jcarousel-control-next:hover,
+.jcarousel-control-next:link,
+.jcarousel-control-next:active,
+.jcarousel-control-next:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.jcarousel-control-prev.jcarousel-inactive,
+.jcarousel-control-next.jcarousel-inactive {
     opacity: .5;
     cursor: default;
 }
