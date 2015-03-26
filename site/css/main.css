@@ -12,7 +12,10 @@ section {
     width: 420px;
 }
 
-
+.button-spacing a {
+    margin-left: 7px;
+    height: 48px;
+}
 
 #sp-jcarousel-wrapper {
     width: 420px;
