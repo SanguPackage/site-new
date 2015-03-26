@@ -3,8 +3,8 @@ extends ../skeleton.jade
 mixin carouselImg(img, text, height)
   li
     .text-muted!= text
-    a.popup-thumbnail(href='#', data-img='img/sp/index/'+img+'.png')
-      img(src='img/sp/index/'+img+'-thumb.png', width='400', height=height)
+    a.popup-thumbnail(href='#sp-jcarousel-popup')
+      img(src='img/sp/index/'+img+'-thumb.png', width='400', height=height, data-img='img/sp/index/'+img+'.png')
 
 
 block content
@@ -17,9 +17,12 @@ block content
 
           p Het gekende en geliefde package :)
 
+          #sp-jcarousel-popup
+            img
+
           #sp-jcarousel-wrapper
-            a.jcarousel-control-prev(href="#") &lsaquo;
-            a.jcarousel-control-next(href="#") &rsaquo;
+            a.jcarousel-control-prev.fix-bootstrap-link(href="#") &lsaquo;
+            a.jcarousel-control-next.fix-bootstrap-link(href="#") &rsaquo;
             .jcarousel
               ul
                 +carouselImg('maintagger', "Taggers die naadloos samensmelten in de bestaande pagina's", 122)

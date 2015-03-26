@@ -33,12 +33,18 @@
 			});
 	});
 
-	$('a.popup-thumbnail').click(function(e) {
-		var imgUrl = $(this).attr('data-img');
-		bootbox.dialog({
-		  //title: "That html",
-		  message: '<img src="'+imgUrl+'" width="1280" />'
-		});
-		e.preventDefault();
+	$('a.popup-thumbnail').fullScreenPopup({
+	    bgColor: '#c8aa6e',
+	    //inlineStyles: true,
+	    //mainWrapperClass: 'twbackground',
+	    //contentWrapperClass: 'twbackground',
+	    closePopupClass: 'fix-bootstrap-link sp-jcarousel-popup-close',
+	    animationSpeed: 300, //ms
+	    updatePopup: function(popup, link) {
+	    	var imgUrl = $(link).attr('data-img');
+
+	    	var popupImg = $('img', popup).first();
+	    	popupImg.attr('src', imgUrl);
+	    }
 	});
 })(jQuery);
