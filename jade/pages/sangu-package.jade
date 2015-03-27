@@ -1,16 +1,53 @@
 extends ../skeleton.jade
 
 block content
-	h3 Germans
-	span Adding support for die-staemme.de is probably allowed. See <a href="support">Contributing</a>
+	.container
+		.alert.alert-success.
+			The Sangu Package is a Greasemonkey script which is allowed only on NL and DE servers!
+			<br>
+			<strong>Germans</strong>: Adding support for die-staemme.de is probably allowed! See <a href="support">Contributing</a>
 
-	h3 Non Dutch Languages
-	span Unfortunately the Sangu Package is not legal on your TW Server.
+		.pull-right.button-spacing
+			a.btn.btn-default(target="_blank", data-ot="Installeren via de Chrome Web Store!", href="https://chrome.google.com/webstore/detail/sangu-package/fhmbjphafbpdphffjihgekljkcchcdem?hl=en&gl=BE")
+				img(src="img/ChromeWebStore.png", width="32", height="34")
+
+			a.btn.btn-success.btn-lg(href="api/sangupackage.user.js") Downloaden
+
+		h2 Sangu Package <small>Minder kliks, meer actie!</small>
+		.small-to-h2.small.text-muted
+			| Laatste update: #{releaseDate} (v#{version})
+			img.browsers-supported(src="img/sp/browsers-supported.png", data-ot="Chrome, Firefox en Opera zijn ondersteund!")
 
 
-	h2 Sangu Package
 
-	span.
-		Het Sangu Package is een Greasemonkey script (voor Opera, Firefox en Chrome) dat beweert het spelen van TW sneller, vlotter en efficiënter te laten verlopen en dat, zoals de naam al doet vermoeden, een verzameling is van scripts die de bestaande TW pagina's gaan uitbreiden met vooral extra berekeningen (afstanden, tijden, stacks) en sorteer, groepeer- en filtermogelijkheden. Het Sangu Package is gericht naar grote spelers (50+ dorpen) en is ook meer actief op PA pagina's.
 
-		Sangu speelt op een klassieke wereld maar het package is voor alle werelden geconfigureerd en houdt rekening met loopsnelheden, nachtbonus, maximum edelafstand, fake limiet etc.
+
+		.row <br><br><br><br><br><br>
+		.row oei
+
+		div Een verzameling van kleine en minder kleine scripts om het spelen aangenamer en sneller te laten verlopen
+		div
+
+
+		div Verrijkt ongeveer elke TW pagina
+		div Automatisch laden van jouw wereld settings
+		div Gemaakt voor grote accounts en PA
+		div
+
+
+		include ../includes/sangu-package/install-instructions
+
+
+		.row.
+			Het Sangu Package is een Greasemonkey script (voor Opera, Firefox en Chrome) dat beweert
+			het spelen van TW sneller, vlotter en efficiënter te laten verlopen en dat, zoals de naam
+			al doet vermoeden, een verzameling is van scripts die de bestaande TW pagina's gaan uitbreiden
+			met vooral extra berekeningen (afstanden, tijden, stacks) en sorteer, groepeer- en
+			filtermogelijkheden. Het Sangu Package is gericht naar grote spelers (50+ dorpen) en is ook meer
+			actief op PA pagina's.
+
+			Sangu speelt op een klassieke wereld maar het package is voor alle werelden geconfigureerd en
+			houdt rekening met loopsnelheden, nachtbonus, maximum edelafstand, fake limiet etc.
+
+block css
+	link(rel='stylesheet', href='css/sangu-package.css')

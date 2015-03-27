@@ -10,9 +10,12 @@ block content
             Desktop app for TW Warlords: Explore your world, plan attacks, monitor your enemies&apos;
             progress and more
 
-          p.
-            <a class="btn btn-success btn-lg" href="api/twtactics.zip">Download</a>
-            <a class="btn btn-default btn-lg" href="#">Learn more &raquo;</a>
+
+
+          .clearfix
+            .pull-right.button-spacing.
+              <a class="btn btn-success btn-lg" href="api/twtactics.zip" data-ot="Available for Windows only" data-ot-delay="0.7" data-ot-tip-joint="top">Download for Windows</a>
+              <a class="btn btn-default btn-lg" href="#">Learn more &raquo;</a>
 
       .col-md-6.visible-xs.visible-sm
         hr
@@ -20,7 +23,7 @@ block content
       .col-md-6
         section
           h2 Sangu Package&nbsp;<small>(NL server only)</small>
-          .small-to-h2.small.text-muted Laatste update: #{releaseDate} (#{version})
+          .small-to-h2.small.text-muted Laatste update: #{releaseDate} (v#{version})
 
           #sp-dutch-only.alert.alert-danger Unfortunately the Sangu Package is only legal on TW.nl!<br><span class="text-muted small">The remaining Sangu Package content is therefore in Dutch...</span>
 
@@ -29,7 +32,8 @@ block content
 
           p <strong>Het gekende en geliefde package :)</strong>
 
-          include ../includes/index/sangu-package-install-instructions
+          #sp-installation-instructions.jcarousel
+            include ../includes/sangu-package/install-instructions
 
           include ../includes/index/sangu-package-carousel
 
