@@ -10,5 +10,11 @@
   "license": "ISC",
   "dependencies": {
     "jade": "^1.9.2"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "gulp": "^3.8.11",
+    "gulp-jade": "^1.0.0",
+    "gulp-util": "^3.0.4"
   }
 }
