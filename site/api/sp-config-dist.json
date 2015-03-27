@@ -1,0 +1,4 @@
+{
+	"version": "//<!--@@INCLUDE "version.txt" INDENT=0 //-->",
+	"releaseDate": "//<!--@@INCLUDE CURRENTDATE //-->"
+}

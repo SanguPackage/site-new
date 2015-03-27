@@ -47,7 +47,7 @@
 
 	// Sangu Package Carousel popup
 	$('a.popup-thumbnail').fullScreenPopup({
-		bgColor: '#c8aa6e',
+		bgColor: '#CAB894',
 		//inlineStyles: true,
 		//mainWrapperClass: 'twbackground',
 		//contentWrapperClass: 'twbackground',
