@@ -1,38 +1,29 @@
 extends ../skeleton.jade
 
-mixin carouselImg(img, text, height)
-  li
-    .text-muted!= text
-    a.popup-thumbnail(href='#sp-jcarousel-popup')
-      img(src='img/sp/index/'+img+'-thumb.png', width='400', height=height, data-img='img/sp/index/'+img+'.png')
-
-
 block content
   .container
     .row
       .col-md-6
         section
           h2 Sangu Package&nbsp;<small>(NL server only)</small>
-          .small-to-h2.small.text-muted Huidige versie: 8.33.1
+          .small-to-h2.small.text-muted Laatste update: 15 maart 2015 (8.33.1)
+
+          .pull-right
+            a.btn.btn-default.btn-xs(data-ot="Installatie instructies voor de verschillende browsers") Hoe installeren?
 
           p Het gekende en geliefde package :)
 
-          #sp-jcarousel-popup
-            img
+          #sp-installation-popup
+            Installeren met <a href="http://forum.tribalwars.nl//showthread.php?t=33076" target="_blank">Opera</a><br>
+            Installeren met <a href="http://forum.tribalwars.nl//showpost.php?p=689062&postcount=2" target="_blank">Firefox</a><br>
+            Installeren met <a href="http://forum.tribalwars.nl//showpost.php?p=689085&postcount=3" target="_blank">Chrome</a> (Of via <a href="https://chrome.google.com/webstore/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=nl" target=_blank>Tampermonkey</a>)
+            <br><a href="https://chrome.google.com/webstore/detail/sangu-package/fhmbjphafbpdphffjihgekljkcchcdem?hl=en&gl=BE" target="_blank">Installeren via de Google Chrome Web Store</a>
 
-          #sp-jcarousel-wrapper
-            a.jcarousel-control-prev.fix-bootstrap-link(href="#") &lsaquo;
-            a.jcarousel-control-next.fix-bootstrap-link(href="#") &rsaquo;
-            #sp-jcarousel.jcarousel
-              ul
-                +carouselImg('maintagger', "Taggers die naadloos samensmelten in de bestaande pagina's", 122)
-                +carouselImg('overview-troops-own', 'Saaie troepen overzichtspagina -&gt; kapabele aanvalsplanner', 122)
-                +carouselImg('header', 'Ton van kleine gadgets', 70)
-                +carouselImg('sangu-settings', 'Ongeveer alles is instelbaar!', 122)
+          include ../includes/index/sangu-package-carousel
 
           .clearfix
             .pull-right.button-spacing
-              a.btn.btn-default(target="_blank", href="https://chrome.google.com/webstore/detail/sangu-package/fhmbjphafbpdphffjihgekljkcchcdem?hl=en&gl=BE")
+              a.btn.btn-default(target="_blank", data-ot="Installeren via de Google Web Store!", href="https://chrome.google.com/webstore/detail/sangu-package/fhmbjphafbpdphffjihgekljkcchcdem?hl=en&gl=BE")
                 img(src="img/ChromeWebStore.png", width="32", height="34")
 
               a.btn.btn-success.btn-lg(href="api/sangupackage.user.js") Downloaden
@@ -62,3 +53,10 @@ block content
       .col-sm-6
         section
           include ../includes/index/contribute
+
+block scripts
+  script(src='js/index/sp-carousel.js')
+
+block css
+  link(rel='stylesheet', href='css/index/sangu-package.css')
+  link(rel='stylesheet', href='css/index/sangu-package-carousel.css')

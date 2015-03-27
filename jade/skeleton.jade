@@ -7,8 +7,11 @@ head.no-js(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='css/vendor/bootstrap.min.css')
     link(rel='stylesheet', href='css/vendor/bootstrap-theme.min.css')
+    link(rel='stylesheet', href='css/vendor/opentip-jquery.css')
 
     link(rel='stylesheet', href='css/main.css')
+    block css
+
     script(src='js/vendor/modernizr-2.8.3-respond-1.4.2.min.js')
 
   body
@@ -49,8 +52,12 @@ head.no-js(lang='en')
     script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
     script(src='js/vendor/bootstrap.min.js')
     script(src='js/vendor/jquery.carousel.min.js')
+    script(src='js/vendor/opentip-jquery.min.js')
+
     script(src='js/jquery.fullscreen-popup.js')
     script(src='js/main.js')
+    block scripts
+
     script.
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
       function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
