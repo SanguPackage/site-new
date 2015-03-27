@@ -3,3 +3,7 @@
     display: none;
 }
 
+/* SP for NL server only notice */
+#sp-dutch-only {
+	display: none;
+}

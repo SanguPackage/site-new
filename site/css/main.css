@@ -6,6 +6,8 @@ body {
     padding-top: 15px;
 }
 
+
+
 /* Fix for Bootstrap <a> meddling */
 .fix-bootstrap-link,
 .fix-bootstrap-link:hover,
@@ -14,6 +16,7 @@ body {
 .fix-bootstrap-link:visited {
     color: #fff;
     text-decoration: none;
+    outline: none;
 }
 
 .small-to-h2 {
