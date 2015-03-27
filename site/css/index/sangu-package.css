@@ -6,4 +6,5 @@
 /* SP for NL server only notice */
 #sp-dutch-only {
 	display: none;
+	  padding: 8px;
 }
