@@ -22,3 +22,4 @@ gulp.task('watch', function() {
 })
 
 gulp.task('default', ['jade', 'watch']);
+gulp.task('release', ['jade']);
