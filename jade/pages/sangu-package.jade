@@ -1,31 +1,37 @@
 extends ../skeleton.jade
 
 block content
+	.jumbotron
+		.container
+			#sp-dutch-only.alert.alert-success.
+				The Sangu Package is a Greasemonkey script which is allowed only on NL and DE servers!
+				<br>
+				<strong>Germans</strong>: Adding support for die-staemme.de is probably allowed! See <a href="support">Contributing</a>
+
+			h2 Sangu Package <small>Minder kliks, meer actie!</small>
+			.small-to-h2.small.text-muted
+				| Laatste update: #{releaseDate} (v#{version})
+				img.browsers-supported(src="img/sp/browsers-supported.png", data-ot="Chrome, Firefox en Opera zijn ondersteund!")
+
+
+			p.
+				Een verzameling van kleine <small>en minder kleine</small> scripts
+				om het spelen van Tribal Wars aangenamer en sneller te laten verlopen
+
+
+
+			p.button-spacing
+				a.btn.btn-default(target="_blank", data-ot="Installeren via de Chrome Web Store!", href="https://chrome.google.com/webstore/detail/sangu-package/fhmbjphafbpdphffjihgekljkcchcdem?hl=en&gl=BE")
+					img(src="img/ChromeWebStore.png", width="32", height="34")
+
+				a.btn.btn-success.btn-lg(href="api/sangupackage.user.js") Downloaden
+
+
 	.container
-		.alert.alert-success.
-			The Sangu Package is a Greasemonkey script which is allowed only on NL and DE servers!
-			<br>
-			<strong>Germans</strong>: Adding support for die-staemme.de is probably allowed! See <a href="support">Contributing</a>
-
-		.pull-right.button-spacing
-			a.btn.btn-default(target="_blank", data-ot="Installeren via de Chrome Web Store!", href="https://chrome.google.com/webstore/detail/sangu-package/fhmbjphafbpdphffjihgekljkcchcdem?hl=en&gl=BE")
-				img(src="img/ChromeWebStore.png", width="32", height="34")
-
-			a.btn.btn-success.btn-lg(href="api/sangupackage.user.js") Downloaden
-
-		h2 Sangu Package <small>Minder kliks, meer actie!</small>
-		.small-to-h2.small.text-muted
-			| Laatste update: #{releaseDate} (v#{version})
-			img.browsers-supported(src="img/sp/browsers-supported.png", data-ot="Chrome, Firefox en Opera zijn ondersteund!")
-
-
-
-
-
 		.row <br><br><br><br><br><br>
 		.row oei
 
-		div Een verzameling van kleine en minder kleine scripts om het spelen aangenamer en sneller te laten verlopen
+		div
 		div
 
 
@@ -48,6 +54,9 @@ block content
 
 			Sangu speelt op een klassieke wereld maar het package is voor alle werelden geconfigureerd en
 			houdt rekening met loopsnelheden, nachtbonus, maximum edelafstand, fake limiet etc.
+
+block scripts
+	script(src='js/sp.js')
 
 block css
 	link(rel='stylesheet', href='css/sangu-package.css')

@@ -1,3 +1,17 @@
 .browsers-supported {
 	padding-left: 10px;
 }
+
+.jumbotron {
+	padding: 0px 0px 0px;
+}
+
+#sp-dutch-only {
+   display: none;
+   padding: 8px;
+   margin-top: 15px;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
