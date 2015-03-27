@@ -14,7 +14,12 @@
 
 	Opentip.defaultStyle = 'mystyle';
 
-	//(data-ot="Installatie instructies voor jouw browser")
+
+
+
+
+
+	// Sangu Package Installation
 	var spInstallTip = new Opentip($('#sp-install'));
 	spInstallTip.setContent('Installatie instructies voor jouw browser');
 

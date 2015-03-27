@@ -2,6 +2,10 @@ body {
 	padding-bottom: 15px;
 }
 
+#github-link {
+    padding-top: 15px;
+}
+
 /* Fix for Bootstrap <a> meddling */
 .fix-bootstrap-link,
 .fix-bootstrap-link:hover,
