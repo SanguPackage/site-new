@@ -15,3 +15,26 @@
 .navbar {
 	margin-bottom: 0;
 }
+
+#features-title .well {
+	background: #A1A1A1;
+	color: #545454;
+	text-align: center;
+	border-color: #070707;
+}
+
+#features .well {
+	height: 160px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#features img {
+	float: left;
+	margin-left: -17px;
+}
+
+.rich-in-features-img-text {
+	margin-top: 10px;
+}
+
