@@ -8,24 +8,30 @@ block content
 				<br>
 				<strong>Germans</strong>: Adding support for die-staemme.de is probably allowed! See <a href="support">Contributing</a>
 
+
+
+			p.pull-right.button-spacing-sp
+				a.btn.btn-default(target="_blank", data-ot="Installeren via de Chrome Web Store!", href="https://chrome.google.com/webstore/detail/sangu-package/fhmbjphafbpdphffjihgekljkcchcdem?hl=en&gl=BE")
+					img(src="img/ChromeWebStore_Badge.png", width="206", height="58")
+
+				a.btn.btn-success.btn-lg(href="api/sangupackage.user.js") Downloaden<br><small>(Firefox, Opera)</small>
+
+
+
 			h2 Sangu Package <small>Minder kliks, meer actie!</small>
 			.small-to-h2.small.text-muted
 				| Laatste update: #{releaseDate} (v#{version})
 				img.browsers-supported(src="img/sp/browsers-supported.png", data-ot="Chrome, Firefox en Opera zijn ondersteund!")
 
-			.row
-				.col-md-4
-				.col-md-4
-				.col-md-4
-					h5.text-center
-						| oeps
+			a.install-link(href="#installation") Hoe installeren?
 
 
-			p.button-spacing-left
-				a.btn.btn-default(target="_blank", data-ot="Installeren via de Chrome Web Store!", href="https://chrome.google.com/webstore/detail/sangu-package/fhmbjphafbpdphffjihgekljkcchcdem?hl=en&gl=BE")
-					img(src="img/ChromeWebStore.png", width="32", height="34")
 
-				a.btn.btn-success.btn-lg(href="api/sangupackage.user.js") Downloaden
+
+
+
+
+
 
 	.container
 		#features-title.row
@@ -52,21 +58,35 @@ block content
 					h3 Gemaakt voor grote accounts en PA
 
 
-	.container
-		hr
 
 		.row
 			.col-md-4
-				h3 Installeren
-				include ../includes/sangu-package/install-instructions
+				a(name="installation")
+				ul.list-group
+					li.list-group-item
+						h3.group-title Hoe installeren?
+					li.list-group-item
+						include ../includes/sangu-package/install-instructions
 
 
 			.col-md-4
-				h3 wat hier nu
+				ul#why-use-sp.list-group
+					li.list-group-item.text-center
+						h3.group-title Waarom
+
+					+whyUseItem('search', 'Vindt je aanvalsdorpen en laat loopafstand tot je vijanden berekenen.')
+					+whyUseItem('hotel', 'Maakt van de ingame TW taggers beesten die je masses helpen overleven.')
+					+whyUseItem('calculator', 'Berekent afstanden, tijden en stacks zodat jij het niet hoeft te doen!')
+					+whyUseItem('filter', 'Gebruik de filters en vindt vreemde ondersteuning, overstacks en verloren gelopen edels.')
+
+
 
 			.col-md-4
-				h3 Tutorials
-				div We wachten op Edje... :p
+				ul.list-group
+					li.list-group-item
+						h3.group-title Hoe gebruik ik het?
+					li.list-group-item
+						div Het is wachten geblazen op Edje zijn fantastische gidsen... :p
 
 
 
@@ -75,3 +95,8 @@ block scripts
 
 block css
 	link(rel='stylesheet', href='css/sangu-package.css')
+
+mixin whyUseItem(fa, text)
+	li.list-group-item
+		i(class="fa fa-3x fa-" + fa)
+		span <strong>#{text}</strong>

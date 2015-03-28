@@ -1,5 +1,5 @@
-.browsers-supported {
-	padding-left: 10px;
+.navbar {
+	margin-bottom: 0;
 }
 
 .jumbotron {
@@ -12,9 +12,17 @@
    margin-top: 15px;
 }
 
-.navbar {
-	margin-bottom: 0;
+
+.browsers-supported {
+	padding-left: 10px;
 }
+
+.button-spacing-sp a {
+    margin-left: 7px;
+    height: 65px;
+}
+
+/* SP Features */
 
 #features-title .well {
 	background: #A1A1A1;
@@ -38,3 +46,16 @@
 	margin-top: 10px;
 }
 
+.install-link {
+	font-size: 14px;
+}
+
+.group-title {
+	margin: 0px;
+}
+
+#why-use-sp i {
+	float: left;
+	padding-right: 10px;
+	color: #858B89;
+}
