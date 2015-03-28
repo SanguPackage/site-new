@@ -4,6 +4,7 @@
 
 .jumbotron {
 	padding: 0px 0px 0px;
+	border-bottom: 1px solid #A1A1A1;
 }
 
 #sp-dutch-only {
@@ -29,6 +30,7 @@
 	color: #545454;
 	text-align: center;
 	border-color: #070707;
+	margin-top: -15px;
 }
 
 #features .well {
@@ -58,5 +60,4 @@
 	float: left;
 	padding-right: 10px;
 	color: #BDC6C8;
-
 }
