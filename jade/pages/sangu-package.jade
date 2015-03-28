@@ -61,32 +61,40 @@ block content
 
 		.row
 			.col-md-4
-				a(name="installation")
-				ul.list-group
-					li.list-group-item
-						h3.group-title Hoe installeren?
-					li.list-group-item
-						include ../includes/sangu-package/install-instructions
+				.row
+					a(name="installation")
+					ul.list-group
+						li.list-group-item
+							h3.group-title Hoe installeren?
+						li.list-group-item
+							include ../includes/sangu-package/install-instructions
+
+				.row
+					ul.list-group
+						li.list-group-item
+							h3.group-title Hoe gebruik ik het?
+						li.list-group-item
+							div Het is wachten geblazen op Edje zijn fantastische gidsen... :p
 
 
-			.col-md-4
-				ul#why-use-sp.list-group
-					li.list-group-item.text-center
-						h3.group-title Waarom
+			.col-md-8.why-use-sp
+				.row
+					.col-md-6
+						ul.list-group
+							+whyUseItem('users', 'Zie op elke pagina welke van je vrienden online zijn.', true)
+							+whyUseItem('magic', 'Nieuwe bevelen worden automatisch hernoemd naar de verstuurde eenheden.', true)
+							+whyUseItem('hotel', 'Maakt van de ingame TW taggers beesten die je massas helpen overleven.', true)
+							+whyUseItem('calculator', 'Berekent afstanden, tijden en stacks zodat jij het niet hoeft te doen!', false)
 
-					+whyUseItem('search', 'Vindt je aanvalsdorpen en laat loopafstand tot je vijanden berekenen.')
-					+whyUseItem('hotel', 'Maakt van de ingame TW taggers beesten die je masses helpen overleven.')
-					+whyUseItem('calculator', 'Berekent afstanden, tijden en stacks zodat jij het niet hoeft te doen!')
-					+whyUseItem('filter', 'Gebruik de filters en vindt vreemde ondersteuning, overstacks en verloren gelopen edels.')
+					.col-md-6
+						ul.list-group
+							+whyUseItem('wrench', "Configureer het package naar jouw smaak via de nieuwe instellingen pagina's.", true)
+							+whyUseItem('search', 'Vindt je aanvalsdorpen en laat de loopafstand tot je vijanden berekenen.', true)
+							+whyUseItem('filter', 'Gebruik de filters en vindt vreemde ondersteuning, overstacks en verloren gelopen edels.', false)
 
 
 
-			.col-md-4
-				ul.list-group
-					li.list-group-item
-						h3.group-title Hoe gebruik ik het?
-					li.list-group-item
-						div Het is wachten geblazen op Edje zijn fantastische gidsen... :p
+
 
 
 
@@ -96,7 +104,10 @@ block scripts
 block css
 	link(rel='stylesheet', href='css/sangu-package.css')
 
-mixin whyUseItem(fa, text)
+mixin whyUseItem(fa, text, fat)
 	li.list-group-item
 		i(class="fa fa-3x fa-" + fa)
-		span <strong>#{text}</strong>
+		if fat
+			span <strong>#{text}</strong>
+		else
+			span #{text}
