@@ -1,4 +1,5 @@
 {
 	"version": "//<!--@@INCLUDE "version.txt" INDENT=0 //-->",
-	"releaseDate": "//<!--@@INCLUDE CURRENTDATE //-->"
+	"releaseDate": "//<!--@@INCLUDE CURRENTDATE //-->",
+	"contributors": "//<!--@@INCLUDE "contributors.txt" INDENT=0 //-->"
 }

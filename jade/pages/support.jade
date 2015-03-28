@@ -1,6 +1,33 @@
 extends ../skeleton.jade
 
 block content
-	h2 Donate
+	.container
+		h2 Donate
+		span You'd like to help but don't know how to create a new feature.
+			| This is possible by doing a donation! :)
+			| <br>You can also gift me one of the immensely interesting books on my 
+			| <a target="_blank" href="http://www.amazon.com/wishlist/1RFQ21NSF4PAI/ref=cm_wl_prev_ret?_encoding=UTF8&reveal=">Amazon Wishlist</a>
 
-	h2 Contribute
+		div.
+			
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="' + paypalCode + '">
+			<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="Buy me a beer">
+			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+			<br>Donate €5
+
+			<h3>Contributors</h3>
+			Have contributed to the Sangu Package:
+			<br><b>#{contributors}</b>
+			
+
+			<br><br><br><br>
+			
+			+createButton("FA9MAMFAYKANL", 5, trans.sp.sp.donate.beer)
+			+createButton("R9RX6XBCV6T4G", 10, trans.sp.sp.donate.food)
+			+createButton("ELG8Y2GLSXAVA", 20, trans.sp.sp.donate.yaye)
+			
+
+
+		h2 Contribute
