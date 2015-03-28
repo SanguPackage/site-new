@@ -14,11 +14,13 @@ block content
 				a.btn.btn-default(target="_blank", data-ot="Installeren via de Chrome Web Store!", href="https://chrome.google.com/webstore/detail/sangu-package/fhmbjphafbpdphffjihgekljkcchcdem?hl=en&gl=BE")
 					img(src="img/ChromeWebStore_Badge.png", width="206", height="58")
 
-				a.btn.btn-success.btn-lg(href="api/sangupackage.user.js") Downloaden<br><small>(Firefox, Opera)</small>
+				a.btn.btn-success.btn-lg(href="api/sangupackage.user.js")
+					i(class="fa fa-3x fa-download", style="float: left")
+					| &nbsp;Downloaden<small><br>&nbsp;(Firefox, Opera)</small>
 
 
 
-			h2 Sangu Package <small>Minder kliks, meer actie!</small>
+			h3.title Sangu Package <small>Minder kliks, meer actie!</small>
 			.small-to-h2.small.text-muted
 				| Laatste update: #{releaseDate} (v#{version})
 				img.browsers-supported(src="img/sp/browsers-supported.png", data-ot="Chrome, Firefox en Opera zijn ondersteund!")
