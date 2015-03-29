@@ -62,6 +62,10 @@
 	color: #BDC6C8;
 }
 
+.why-use-sp li {
+	min-height: 70px;
+}
+
 .title {
 	font-size: 38px;
 }

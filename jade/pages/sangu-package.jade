@@ -25,7 +25,7 @@ block content
 				| Laatste update: #{releaseDate} (v#{version})
 				img.browsers-supported(src="img/sp/browsers-supported.png", data-ot="Chrome, Firefox en Opera zijn ondersteund!")
 
-			a.install-link(href="#installation") Hoe installeren?
+			a.hidden-md.hidden-lg.install-link(href="#installation") Hoe installeren?
 
 
 
@@ -86,6 +86,8 @@ block content
 						li.list-group-item
 							div De berichtenhernoemer wordt niet meer door Sangu ondersteund maar het script wordt wel nog door veel spelers actief gebruikt.
 							| <br>
+							| Ook deze broncode is beschikbaar op <a target="_blank" href="https://github.com/SanguPackage/berichtenhernoemer">GitHub</a>.
+							| <br><br>
 							.pull-right
 								a(href="http://forum.tribalwars.nl/showthread.php?112767-GM-Berichtenhernoemer", target="_blank") Meer informatie
 								| &nbsp;
@@ -109,6 +111,13 @@ block content
 
 
 
+mixin whyUseItem(fa, text, fat)
+	li.list-group-item
+		i(class="fa fa-3x fa-" + fa)
+		if fat
+			span <strong>#{text}</strong>
+		else
+			span #{text}
 
 
 
@@ -119,10 +128,3 @@ block scripts
 block css
 	link(rel='stylesheet', href='css/sangu-package.css')
 
-mixin whyUseItem(fa, text, fat)
-	li.list-group-item
-		i(class="fa fa-3x fa-" + fa)
-		if fat
-			span <strong>#{text}</strong>
-		else
-			span #{text}
