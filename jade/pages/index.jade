@@ -1,70 +1,70 @@
 extends ../skeleton.jade
 
 block content
-  .container
-    .row
-      .col-md-6
-        section
-          h2 TW Tactics&nbsp;<small>(All servers)</small>
-          p.
-            Desktop app for TW Warlords: Explore your world, plan attacks, monitor your enemies&apos;
-            progress and more
+	.container
+		.row
+			.col-md-6
+				section
+					h2 TW Tactics&nbsp;<small>(All servers)</small>
+					p.
+						Desktop app for TW Warlords: Explore your world, plan attacks, monitor your enemies&apos;
+						progress and more
+
+					p Requires .NET Framework 4.0
+
+				.clearfix
+					.pull-right.button-spacing-right.
+						<a class="btn btn-success btn-lg" href="api/twtactics.zip" data-ot="Available for Windows only" data-ot-delay="0.7" data-ot-tip-joint="top">
+							<i class="fa fa-download"></i>
+							Download for Windows
+						</a>
+						<a class="btn btn-default btn-lg" href="twtactics">Learn more &raquo;</a>
+
+			.col-md-6.visible-xs.visible-sm
+				hr
+
+			.col-md-6
+				section
+					h2 Sangu Package&nbsp;<small>(NL server only)</small>
+					.small-to-h2.small.text-muted Laatste update: #{releaseDate} (v#{version})
+
+					#sp-dutch-only.alert.alert-danger Unfortunately the Sangu Package is only legal on TW.nl!<br><span class="text-muted small">The remaining Sangu Package content is therefore in Dutch...</span>
+
+					.pull-right
+						a#sp-install.btn.btn-default.btn-xs Hoe installeren?
+
+					p <strong>Het gekende en geliefde package :)</strong>
+
+					#sp-installation-instructions.jcarousel
+						include ../includes/sangu-package/install-instructions
+
+					include ../includes/index/sangu-package-carousel
+
+					.clearfix
+						.pull-right.button-spacing-right
+							include ../includes/index/sangu-package-buttons
 
 
+	.container
+		hr
 
-          .clearfix
-            .pull-right.button-spacing-right.
-              <a class="btn btn-success btn-lg" href="api/twtactics.zip" data-ot="Available for Windows only" data-ot-delay="0.7" data-ot-tip-joint="top">
-                <i class="fa fa-download"></i>
-                Download for Windows
-              </a>
-              <a class="btn btn-default btn-lg" href="twtactics">Learn more &raquo;</a>
+	.container
+		.row
+			.col-md-6
+				section
+					include ../includes/index/tribe-sangu
 
-      .col-md-6.visible-xs.visible-sm
-        hr
+			.col-md-6.visible-xs.visible-sm
+				hr
 
-      .col-md-6
-        section
-          h2 Sangu Package&nbsp;<small>(NL server only)</small>
-          .small-to-h2.small.text-muted Laatste update: #{releaseDate} (v#{version})
-
-          #sp-dutch-only.alert.alert-danger Unfortunately the Sangu Package is only legal on TW.nl!<br><span class="text-muted small">The remaining Sangu Package content is therefore in Dutch...</span>
-
-          .pull-right
-            a#sp-install.btn.btn-default.btn-xs Hoe installeren?
-
-          p <strong>Het gekende en geliefde package :)</strong>
-
-          #sp-installation-instructions.jcarousel
-            include ../includes/sangu-package/install-instructions
-
-          include ../includes/index/sangu-package-carousel
-
-          .clearfix
-            .pull-right.button-spacing-right
-              include ../includes/index/sangu-package-buttons
-
-
-  .container
-    hr
-
-  .container
-    .row
-      .col-md-6
-        section
-          include ../includes/index/tribe-sangu
-
-      .col-md-6.visible-xs.visible-sm
-        hr
-
-      .col-md-6
-        section
-          include ../includes/index/contribute
+			.col-md-6
+				section
+					include ../includes/index/contribute
 
 block scripts
-  script(src='js/index/sp.js')
-  script(src='js/index/sp-carousel.js')
+	script(src='js/index/sp.js')
+	script(src='js/index/sp-carousel.js')
 
 block css
-  link(rel='stylesheet', href='css/index/sangu-package.css')
-  link(rel='stylesheet', href='css/index/sangu-package-carousel.css')
+	link(rel='stylesheet', href='css/index/sangu-package.css')
+	link(rel='stylesheet', href='css/index/sangu-package-carousel.css')

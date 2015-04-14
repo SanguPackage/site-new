@@ -1,4 +1,6 @@
 (function($) {
+	'use strict';
+
 	// copy pasted
 	var userLanguage = window.navigator.userLanguage || window.navigator.language;
 	if (userLanguage.indexOf('nl') === -1) {
@@ -17,7 +19,7 @@
 		spInstallTip.hide();
 
 		// Show/Hide the installation instructions
-		var popup = $('#sp-installation-instructions')
+		var popup = $('#sp-installation-instructions');
 		popup.slideToggle();
 	});
 

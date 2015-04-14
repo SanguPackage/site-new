@@ -1,10 +1,10 @@
 /* Installation instructions popup */
 #sp-installation-instructions {
-    display: none;
+	display: none;
 }
 
 /* SP for NL server only notice */
 #sp-dutch-only {
 	display: none;
-	  padding: 8px;
+	padding: 8px;
 }

@@ -1,4 +1,6 @@
 (function($) {
+	'use strict';
+
 	var spCarousel = $('#sp-jcarousel');
 
 	// Sangu Package Carousel

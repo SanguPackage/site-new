@@ -1,21 +1,21 @@
 mixin carouselImg(img, text, height)
-  li
-    .text-muted!= text
-    a.popup-thumbnail(href='#sp-jcarousel-popup')
-      img(src='img/sp/index/'+img+'-thumb.png', width='400', height=height, data-img='img/sp/index/'+img+'.png')
+	li
+		.text-muted!= text
+		a.popup-thumbnail(href='#sp-jcarousel-popup')
+			img(src='img/sp/index/'+img+'-thumb.png', width='400', height=height, data-img='img/sp/index/'+img+'.png')
 
 
 
 #sp-jcarousel-popup
-  img
+	img
 
 #sp-jcarousel-wrapper
-  a.jcarousel-control-prev.fix-bootstrap-link(href="#") &lsaquo;
-  a.jcarousel-control-next.fix-bootstrap-link(href="#") &rsaquo;
+	a.jcarousel-control-prev.fix-bootstrap-link(href="#") &lsaquo;
+	a.jcarousel-control-next.fix-bootstrap-link(href="#") &rsaquo;
 
-  #sp-jcarousel.jcarousel
-    ul
-      +carouselImg('maintagger', "Taggers die naadloos samensmelten in de bestaande pagina's", 122)
-      +carouselImg('overview-troops-own', 'Saaie troepen overzichtspagina <i class="fa fa-long-arrow-right"></i> kapabele aanvalsplanner', 122)
-      +carouselImg('header', 'Ton van kleine gadgets', 70)
-      +carouselImg('sangu-settings', 'Ongeveer alles is instelbaar!', 122)
+	#sp-jcarousel.jcarousel
+		ul
+			+carouselImg('maintagger', "Taggers die naadloos samensmelten in de bestaande pagina's", 122)
+			+carouselImg('overview-troops-own', 'Saaie troepen overzichtspagina <i class="fa fa-long-arrow-right"></i> kapabele aanvalsplanner', 122)
+			+carouselImg('header', 'Ton van kleine gadgets', 70)
+			+carouselImg('sangu-settings', 'Ongeveer alles is instelbaar!', 122)
