@@ -2,14 +2,14 @@ extends ../skeleton.jade
 
 mixin createDonateButton(paypalCode, amount, tooltip, title)
 	.col-md-4
-		.row <b>#{title}</b>
 		.row.
 			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
 			<input type="hidden" name="cmd" value="_s-xclick">
 			<input type="hidden" name="hosted_button_id" value="#{paypalCode}">
 			<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="#{tooltip}">
 			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-			<br>Donate €#{amount}<br><br>
+		.row <b>#{title}</b>
+			| <br>€#{amount}<br><br>
 
 
 block content
@@ -20,9 +20,13 @@ block content
 					.row
 						h2 Contributing
 						div Check out the <a href="https://github.com/SanguPackage/">Sangu Projects</a> on GitHub.
-						div <br>Have contributed to the Sangu Package: 
+						div <br>The following scripters have contributed to the Sangu Package: 
 							| <br><b>#{contributors}</b>
-			
+
+						div <br>Status for making the Sangu Package work for <a href="https://www.die-staemme.de/">die-staemme.de</a>:
+							| <br>Since there is a <code>trans</code> object that contain all server specific configuration, adding
+							| support for DE should be fairly straightforward. Please contact me if you wish to help realise this.
+
 					.row
 						h2 Donate
 						span You'd like to help but don't know how to create a new feature.
@@ -32,17 +36,10 @@ block content
 						+createDonateButton("FA9MAMFAYKANL", 5, 'Buy me a beer', 'A beer')
 						+createDonateButton("R9RX6XBCV6T4G", 10, 'Buy me a pizza (mm pizza)', 'Pizza (mm pizza)')
 						+createDonateButton("ELG8Y2GLSXAVA", 20, 'Buy me a new book for my collection', 'A book')
-		
+
 					.row
 						| <br>You can also gift me one of the immensely interesting programming books on my 
 						| <a target="_blank" href="http://www.amazon.com/wishlist/1RFQ21NSF4PAI/ref=cm_wl_prev_ret?_encoding=UTF8&reveal=">Amazon Wishlist</a>.
-
-
-
-
-			
-			
-
 
 block css
 	link(rel='stylesheet', href='css/support.css')
