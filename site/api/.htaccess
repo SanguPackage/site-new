@@ -3,4 +3,3 @@ AddHandler application/x-httpd-php53 js
 
 RewriteEngine On
 RewriteRule ^twtactics.zip$ ./twtactics-send-ga.php?type=zip
-RewriteRule ^twtactics.msi$ ./twtactics-send-ga.php?type=msi

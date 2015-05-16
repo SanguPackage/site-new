@@ -24,9 +24,5 @@ switch ($_GET['type'])
 	case 'zip':
 		header('Location: twtactics-redirect.zip');
 		break;
-
-	case 'msi':
-		header('Location: twtactics-redirect.msi');
-		break;
 }
 ?>
