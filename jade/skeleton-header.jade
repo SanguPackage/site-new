@@ -13,9 +13,11 @@
 
 		.collapse.navbar-collapse
 			ul.nav.navbar-nav
-				li
+				li.hidden-xs
 					p.navbar-btn
 						a.btn.btn-default(href='twtactics') TW Tactics
+				li.visible-xs
+						a(href='twtactics') TW Tactics
 				li
 					a(href='sangu-package') Sangu Package
 				li
@@ -23,6 +25,6 @@
 				li
 					a(href='about') About
 
-			ul.nav.navbar-nav.navbar-right
+			ul.nav.navbar-nav.navbar-right.hidden-xs
 				li#github-link.
 					<iframe src="https://ghbtns.com/github-btn.html?user=SanguPackage&repo=TWTactics&type=watch&count=false&v=2" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
