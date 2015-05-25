@@ -6,7 +6,6 @@ _notused
 site/api/sangupackage.user.js
 site/api/sp-config.json
 site/api/sangupackageversion.php
-site/api/twtactics-redirect.zip
-site/api/twtactics-redirect.msi
+site/api/twtactics-redirect.exe
 
 sangupackage-site-new.sublime-workspace
