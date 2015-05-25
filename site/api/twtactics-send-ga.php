@@ -17,5 +17,8 @@ $event = new GoogleAnalytics\Event('Downloads', 'TWTactics-exe', '1.0');
 
 $tracker->trackEvent($event, $session, $visitor);
 
+header("Content-type: application/force-download");
+header("Content-Transfer-Encoding: Binary");
+header("Content-length: ".filesize("./TWTactics-redirect.exe"));
 header('Content-disposition: attachment; filename="TWTactics.exe"');
 readfile("TWTactics-redirect.exe");?>

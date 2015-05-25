@@ -1,0 +1,27 @@
+extends ../skeleton.jade
+
+block content
+	include ../includes/twtactics-jumbotron
+
+	.container
+		#jumbotron-subtitle.row
+			.well.well-sm.
+				<strong>If you are unable to run the installer after downloading TWTactics, you'll probably need to unblock the file first.</strong>
+
+		.row
+			.col-md-12
+				h2 How to unblock
+
+				.small-to-h2
+					<br>After downloading the file, go to your downloads folder, right click the downloaded TWTactics file and choose properties.
+					<br>Then click the "Unblock" button and you are ready to install TWTactics!
+
+		.row
+			.col-md-6
+				img(src="img/twt/file-properties.png")
+
+			.col-md-6
+				img(src="img/twt/file-unblock.png")
+
+block css
+	link(rel='stylesheet', href='css/twtactics.css')

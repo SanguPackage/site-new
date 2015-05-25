@@ -6,6 +6,16 @@ body {
 	padding-top: 15px;
 }
 
+#jumbotron-subtitle .well {
+	background: #A1A1A1;
+	color: #545454;
+	text-align: center;
+	border-color: #070707;
+	margin-top: -15px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
 
 /* Fix for Bootstrap <a> meddling */
 .fix-bootstrap-link,
