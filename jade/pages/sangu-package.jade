@@ -10,7 +10,7 @@ block content
 
 
 
-			p.pull-right.button-spacing-sp
+			p.pull-right.button-spacing-sp.hidden-xs
 				a.btn.btn-default(target="_blank", data-ot="Installeren via de Chrome Web Store!", href="https://chrome.google.com/webstore/detail/sangu-package/fhmbjphafbpdphffjihgekljkcchcdem?hl=en&gl=BE")
 					img(src="img/ChromeWebStore_Badge.png", width="206", height="58")
 
@@ -25,9 +25,16 @@ block content
 				| Laatste update: #{releaseDate} (v#{version})
 				img.browsers-supported(src="img/sp/browsers-supported.png", data-ot="Chrome, Firefox en Opera zijn ondersteund!")
 
-			a.hidden-md.hidden-lg.install-link(href="#installation") Hoe installeren?
+			.visible-xs [
+				a.install-link(href="#installation") Hoe installeren?
+				span ]&nbsp;&nbsp;[
+				a.install-link(href="https://chrome.google.com/webstore/detail/sangu-package/fhmbjphafbpdphffjihgekljkcchcdem?hl=en&gl=BE") Chrome Web Store
+				span ]&nbsp;&nbsp;[
+				a.install-link(href="api/sangupackage.user.js") Downloaden
+				span ]
 
-
+			.hidden-xs
+				a.install-link(href="#installation") Hoe installeren?
 
 
 
