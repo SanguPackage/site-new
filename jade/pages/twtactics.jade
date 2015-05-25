@@ -1,4 +1,51 @@
 extends ../skeleton.jade
 
 block content
-	h2 TW Tactics
+	.jumbotron
+		.container
+			p.pull-right.button-spacing-sp
+				a.btn.btn-success.btn-lg(href="api/TWTactics.exe", style="margin-top: 5px")
+					i(class="fa fa-3x fa-download", style="float: left")
+					| &nbsp;Download<small><br>&nbsp;(Windows)</small>
+
+
+
+			h3.title TW Tactics <small>Your tactical advantage</small>
+			.small-to-h2
+				| Keep the global world overview. React swiftly to change.
+
+
+
+	.container
+		.row
+			.col-md-4(style="min-width: 480px")
+				ul.list-group
+					li.list-group-item
+						h3.group-title Tutorial
+						.small-to-h2.text-muted Learn the basics of TW Tactics
+
+					li.list-group-item.
+						<iframe width="420" height="315" src="https://www.youtube.com/embed/jP-e2Bfp7VY" frameborder="0" allowfullscreen></iframe>
+
+			.col-md-4
+				ul.list-group
+					li.list-group-item
+						h3.group-title Attack &amp; Defense
+
+					li.list-group-item
+
+			.col-md-4
+				ul.list-group
+					li.list-group-item
+						h3.group-title Monitoring
+					li.list-group-item
+
+			.col-md-4
+				ul.list-group
+					li.list-group-item
+						h3.group-title Synchronize
+					li.list-group-item
+
+
+block css
+	link(rel='stylesheet', href='css/twtactics.css')
