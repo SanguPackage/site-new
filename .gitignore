@@ -2,7 +2,7 @@ node_modules/
 site/*.html
 _notused
 
-
+site/video/
 site/api/sangupackage.user.js
 site/api/sp-config.json
 site/api/sangupackageversion.php
