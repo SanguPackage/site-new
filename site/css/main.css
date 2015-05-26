@@ -16,6 +16,12 @@ body {
 	margin-right: 5px;
 }
 
+.group-title {
+	margin: 0px;
+}
+.group-title-with-subtitle {
+	margin-top: 0px;
+}
 
 /* Fix for Bootstrap <a> meddling */
 .fix-bootstrap-link,
