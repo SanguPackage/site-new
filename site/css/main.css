@@ -49,3 +49,7 @@ section {
 	margin-right: 7px;
 	height: 48px;
 }
+
+.button-spacing-right a:last-child {
+	margin-right: 0px;
+}
