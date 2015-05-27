@@ -1,50 +1,53 @@
 extends ../skeleton.jade
 
+mixin youtube(id)
+	.embed-responsive.embed-responsive-16by9.youtube
+		<iframe width="420" height="315" src="https://www.youtube.com/embed/#{id}" frameborder="0" allowfullscreen></iframe>
+
 block content
 	.container
 		.row
 			.col-md-6
-				section
-					h2 TW Tactics&nbsp;<small>(All servers)</small>
-					.small-to-h2.small.text-muted Requires <a href="https://www.microsoft.com/en-us/download/details.aspx?id=17851">.NET Framework 4.0</a>
+				h2 TW Tactics&nbsp;<small>(All servers)</small>
+				.small-to-h2.small.text-muted Requires <a href="https://www.microsoft.com/en-us/download/details.aspx?id=17851">.NET Framework 4.0</a>
 
-					p.
-						Desktop app for TW Warlords: Explore your world, plan attacks, monitor your enemies&apos;
-						progress and more
+				p.
+					Desktop app for TW Warlords: Explore your world, plan attacks, monitor your enemies&apos;
+					progress and more
 
-						<iframe width="420" height="315" src="https://www.youtube.com/embed/LMJUEE3RyEQ" frameborder="0" allowfullscreen></iframe>
+				div
+					+youtube("LMJUEE3RyEQ")
 
-					.clearfix
-						.pull-right.button-spacing-right.
-							<a class="btn btn-success btn-lg" href="api/TWTactics.exe" data-ot="Available for Windows only" data-ot-delay="0.7" data-ot-tip-joint="top">
-								<i class="fa fa-download"></i>
-								Download for Windows
-							</a>
-							<a class="btn btn-default btn-lg" href="twtactics">Learn more &raquo;</a>
+				.clearfix
+					.pull-right.button-spacing-right.
+						<a class="btn btn-success btn-lg hidden-xs" href="api/TWTactics.exe" data-ot="Available for Windows only" data-ot-delay="0.7" data-ot-tip-joint="top">
+							<i class="fa fa-download"></i>
+							Download for Windows
+						</a>
+						<a class="btn btn-default btn-lg" href="twtactics">Learn more &raquo;</a>
 
 			.col-md-6.visible-xs.visible-sm
 				hr
 
 			.col-md-6
-				section
-					h2 Sangu Package&nbsp;<small>(NL server only)</small>
-					.small-to-h2.small.text-muted Laatste update: #{releaseDate} (v#{version})
+				h2 Sangu Package&nbsp;<small>(NL server only)</small>
+				.small-to-h2.small.text-muted Laatste update: #{releaseDate} (v#{version})
 
-					#sp-dutch-only.alert.alert-danger Unfortunately the Sangu Package is only legal on TW.nl!<br><span class="text-muted small">The remaining Sangu Package content is therefore in Dutch...</span>
+				#sp-dutch-only.alert.alert-danger Unfortunately the Sangu Package is only legal on TW.nl!<br><span class="text-muted small">The remaining Sangu Package content is therefore in Dutch...</span>
 
-					.pull-right
-						a#sp-install.btn.btn-default.btn-xs Hoe installeren?
+				.pull-right
+					a#sp-install.btn.btn-default.btn-xs Hoe installeren?
 
-					p <strong>Het gekende en geliefde package :)</strong>
+				p <strong>Het gekende en geliefde package :)</strong>
 
-					#sp-installation-instructions.jcarousel
-						include ../includes/sangu-package/install-instructions
+				#sp-installation-instructions.jcarousel
+					include ../includes/sangu-package/install-instructions
 
-					include ../includes/index/sangu-package-carousel
+				include ../includes/index/sangu-package-carousel
 
-					.clearfix
-						.pull-right.button-spacing-right
-							include ../includes/index/sangu-package-buttons
+				.clearfix
+					.pull-right.button-spacing-right
+						include ../includes/index/sangu-package-buttons
 
 
 	.container
@@ -53,15 +56,13 @@ block content
 	.container
 		.row
 			.col-md-6
-				section
-					include ../includes/index/tribe-sangu
+				include ../includes/index/tribe-sangu
 
 			.col-md-6.visible-xs.visible-sm
 				hr
 
 			.col-md-6
-				section
-					include ../includes/index/contribute
+				include ../includes/index/contribute
 
 block scripts
 	script(src='js/index/sp.js')

@@ -23,6 +23,12 @@ body {
 	margin-top: 0px;
 }
 
+/* Youtube */
+.youtube {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 /* Fix for Bootstrap <a> meddling */
 .fix-bootstrap-link,
 .fix-bootstrap-link:hover,
