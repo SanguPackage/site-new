@@ -2,5 +2,5 @@ AddHandler application/x-httpd-php5 js
 AddHandler application/x-httpd-php53 js
 
 RewriteEngine On
-RewriteRule ^TWTactics\.exe$ ./send-ga-twtactics.php
-RewriteRule ^TW-Simulator-KPHS\.rar$ ./send-ga-twsimulator.php
+RewriteRule ^TWTactics\.exe$ ./send-ga-and-download.php?id=1
+RewriteRule ^TW-Simulator-KPHS\.rar$ ./send-ga-and-download.php?id=2
