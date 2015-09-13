@@ -13,28 +13,30 @@ $visitor->setIpAddress($_SERVER['REMOTE_ADDR']);
 $visitor->setUserAgent($_SERVER['HTTP_USER_AGENT']);
 $visitor->setScreenResolution('1024x768');
 
+if (!isset($_GET['id'])) {
+	$_GET['id'] = 1;
+}
 switch ($_GET['id']) {
 	case 2:
-		$sets = (object)[
+		$sets = array(
 			"gaKey" => "KPHS-twsimulator-exe",
 			"version" => "1.0",
 			"prettyFileName" => "TW Simulator+ by KPHS.rar",
-			"actualFileName" => "./TW-Simulator-KPHS.rar",
-		];
+			"actualFileName" => "TW-Simulator-KPHS.rar",
+		);
 		break;
 
 	default:
-		$sets = (object)[
+		$sets = array(
 			"gaKey" => "TWTactics-exe",
 			"version" => "1.0",
 			"prettyFileName" => "TWTactics.exe",
 			"actualFileName" => "./TWTactics-redirect.exe",
-		];
+		);
 		break;
 }
 
 $event = new GoogleAnalytics\Event('Downloads', $sets['gaKey'], $sets['version']);
-
 $tracker->trackEvent($event, $session, $visitor);
 
 header("Content-type: application/force-download");
