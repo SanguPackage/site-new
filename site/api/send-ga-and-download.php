@@ -20,16 +20,16 @@ switch ($_GET['id']) {
 	case 2:
 		$sets = array(
 			"gaKey" => "KPHS-twsimulator-exe",
-			"version" => "1.0",
+			"version" => "1.5",
 			"prettyFileName" => "TW Simulator+ by KPHS.rar",
-			"actualFileName" => "TW-Simulator-KPHS.rar",
+			"actualFileName" => "TW-Simulator-KPHS-v1.5.rar",
 		);
 		break;
 
 	default:
 		$sets = array(
 			"gaKey" => "TWTactics-exe",
-			"version" => "1.0",
+			"version" => "1.1",
 			"prettyFileName" => "TWTactics.exe",
 			"actualFileName" => "./TWTactics-redirect.exe",
 		);
