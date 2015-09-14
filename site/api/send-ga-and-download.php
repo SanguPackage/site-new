@@ -30,8 +30,8 @@ switch ($_GET['id']) {
 		$sets = array(
 			"gaKey" => "TWTactics-exe",
 			"version" => "1.1",
-			"prettyFileName" => "TWTactics.exe",
-			"actualFileName" => "./TWTactics-redirect.exe",
+			"prettyFileName" => "TWTactics v1.1.exe",
+			"actualFileName" => "./TWTactics1.1.exe",
 		);
 		break;
 }
