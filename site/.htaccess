@@ -2,6 +2,7 @@ RewriteEngine On
 RewriteRule ^sangu-package$ ./sangu-package.html
 RewriteRule ^twtactics$ ./twtactics.html
 RewriteRule ^twtactics-install$ ./twtactics-install.html
+RewriteRule ^twtactics-linux$ ./twtactics-linux.html
 RewriteRule ^support$ ./support.html
 RewriteRule ^about$ ./about.html
 RewriteRule ^twsimulator$ ./bernos-twsimulator.html

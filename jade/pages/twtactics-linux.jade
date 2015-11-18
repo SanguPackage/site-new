@@ -1,0 +1,49 @@
+extends ../skeleton.jade
+
+block content
+	include ../includes/twtactics-jumbotron
+
+	.container
+		#jumbotron-subtitle.row
+			.well.well-sm.
+				<strong>How to run TWTactics on Mac and Linux?</strong>
+				<br> <a href="http://www.howtogeek.com/187359/5-ways-to-run-windows-software-on-a-mac/" target="_blank">Read more on HowToGeek.com</a>
+
+			.well.well-sm If you have any experience (good or bad!) with running TWTactics on Mac/Linux, please <a href="mailto:woutervs@hotmail.com">let me know</a> so I can update this page.
+
+		.row
+			.col-md-12
+				h2 Recommended: Vagrant + VirtualBox
+				ul
+					li: a(href="https://www.virtualbox.org/wiki/Downloads" target="_blank") Install VirtualBox
+					li: a(href="https://docs.vagrantup.com/v2/installation/" target="_blank") Install Vagrant
+					li: a(href="https://github.com/SanguPackage/twtactics-vagrant/archive/1.1.1.zip") Download the TWTactics Vagrant archive
+					li Extract the archive somewhere (ex: `c:\temp\twtactics\`)
+					li Enter the folder in cmd.exe (ex: `cd c:\temp\twtactics\`)
+					li Run: `vagrant up` (will download about 2gig)
+					li The VirtualMachine should open
+					li Open Windows Explorer and go to Network &gt; VBOXSVR &gt; \\VBOXSVR\vagrant_data
+					li Install `dotNetFx40_Full_x86_x64` and `TWTactics`
+
+		.row
+			.col-md-12
+				img(src="http://sangu.be/api/vagrant_to_install.png")
+
+		.row
+			.col-md-12
+				h2 Using a Virtual Machine
+				.small-to-h2 (Requires a Windows license)
+				ul
+					li: a(href="http://www.parallels.com/eu/products/desktop/" target="_blank") With Parallels
+					li: a(href="https://www.virtualbox.org/wiki/Downloads" target="_blank") With VirtualBox (FREE)
+
+		.row
+			.col-md-12
+				h2 Using Wine
+				ul
+					li: a(href="https://www.winehq.org/" target="_blank") WineHQ
+					li: a(href="https://www.codeweavers.com/" target="_blank") CrossOver
+					li: a(href="http://winebottler.kronenberg.org/" target="_blank") WineBottles (Mac)
+
+block css
+	link(rel='stylesheet', href='css/twtactics.css')
