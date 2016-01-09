@@ -23,10 +23,10 @@ $tracker->trackEvent($event, $session, $visitor);
 // @name					Berichthernoemer
 // @author				Grote Smurf / De Goede Fee (Edited by: Tjeerdo / .Arrogant)
 // @version 			2.3
-// @namespace			
-// @description			
-// @include			http://nl*.tribalwars.nl/game.php?*screen=report*
-// @include			http://nl*.tribalwars.nl/game.php?*screen=info_village*&id=*
+// @namespace
+// @description
+// @include			https://nl*.tribalwars.nl/game.php?*screen=report*
+// @include			https://nl*.tribalwars.nl/game.php?*screen=info_village*&id=*
 // ==/UserScript==
 
 // Versie 2.3
