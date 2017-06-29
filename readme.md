@@ -24,4 +24,4 @@ Accessible as: `#{contributors}` in jade.
 
 Deploying the website:
 ----------------------
-See `sangupackage-site-new/deploy.md`
+See `deploy.md`
