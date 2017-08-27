@@ -17,6 +17,7 @@ Sangu Package
 -------------
 sangupackage-source:
 - Update version.txt to match TW `game_data.majorVersion`
+- Run mergeIt.ahk
 
 sangupackage-release:
 - Run releaseIt.ps1
