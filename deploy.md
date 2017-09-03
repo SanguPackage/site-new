@@ -2,13 +2,14 @@ How to deploy
 =============
 TW Tactics
 ----------
-- Tag TW Tactics
 - Update AssymblyInfo
+- Tag TW Tactics
 - Build in release mode
 - Create zip of relevent files
 - use NSIS: "installer based on zip file"
+	- Fault folder: $DESKTOP\TWTactics
 - in site-new:
-	- add exe to api/
+	- add exe to site-new/site/api/
 	- update `send-ga-and-download.php`
 	- update twtactics.jade and index.jade
 
