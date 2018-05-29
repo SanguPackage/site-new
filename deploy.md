@@ -27,4 +27,4 @@ sangupackage-release:
 Website
 -------
 - gulp
-- ftp
+- ftp (yes, manually)
