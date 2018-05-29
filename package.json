@@ -4,6 +4,7 @@
 	"description": "Website for SanguPackage and TWTactics",
 	"main": "index.js",
 	"scripts": {
+		"serve": "http-server ./site -o",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"author": "Wouter Van Schandevijl",
@@ -16,6 +17,7 @@
 		"gulp": "^3.8.11",
 		"gulp-jade": "^1.0.0",
 		"gulp-plumber": "^1.0.0",
-		"gulp-util": "^3.0.4"
+		"gulp-util": "^3.0.4",
+		"http-server": "^0.11.1"
 	}
 }
