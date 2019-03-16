@@ -29,9 +29,9 @@ switch ($_GET['id']) {
 	default:
 		$sets = array(
 			"gaKey" => "TWTactics-exe",
-			"version" => "1.2",
-			"prettyFileName" => "TWTactics v1.2.exe",
-			"actualFileName" => "./TWTactics1.2.exe",
+			"version" => "1.3",
+			"prettyFileName" => "TWTactics v1.3.exe",
+			"actualFileName" => "./TWTactics1.3.exe",
 		);
 		break;
 }

@@ -4,11 +4,12 @@
 	"description": "Website for SanguPackage and TWTactics",
 	"main": "index.js",
 	"scripts": {
+		"build": "gulp",
 		"serve": "http-server ./site -o",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"author": "Wouter Van Schandevijl",
-	"license": "ISC",
+	"license": "MIT",
 	"dependencies": {
 		"jade": "^1.9.2"
 	},
