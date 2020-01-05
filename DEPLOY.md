@@ -1,7 +1,9 @@
 How to deploy
 =============
+
 TW Tactics
 ----------
+
 - Update AssymblyInfo
 - Tag TW Tactics
 - Build in release mode
@@ -16,6 +18,7 @@ TW Tactics
 
 Sangu Package
 -------------
+
 sangupackage-source:
 - Update version.txt to match TW `game_data.majorVersion`
 - Run mergeIt.ahk
@@ -26,5 +29,6 @@ sangupackage-release:
 
 Website
 -------
+
 - gulp
 - ftp (yes, manually)
