@@ -24,7 +24,7 @@ sangupackage-source:
 - Run mergeIt.ahk
 
 sangupackage-release:
-- Run releaseIt.ps1
+- Run releaseIt.ps1 (requires node v10.13.0)
 
 
 Website
