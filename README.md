@@ -6,7 +6,7 @@ Building the website
 
 ```bash
 npm install
-gulp
+npm run build
 ```
 
 ### Gulp error
@@ -16,13 +16,13 @@ const { Math, Object } = primordials;
 ReferenceError: primordials is not defined
 ```
 
-Solution: Downgrade node to v10.13.0 ([more info](https://stackoverflow.com/questions/55921442/how-to-fix-referenceerror-primordials-is-not-defined-in-node-js)
+Solution: Downgrade node to v10.13.0 ([more info](https://stackoverflow.com/questions/55921442/how-to-fix-referenceerror-primordials-is-not-defined-in-node-js))
 
 Testing the website
 -------------------
 
 ```bash
-npm run serve
+
 ```
 
 and visit `http://127.0.0.1:8080/`
