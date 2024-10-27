@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Sangu Package - Tribal Wars Greasemonkey script voor Opera, Firefox en Chrome</title>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js" type="text/javascript">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js" type="text/javascript">
 	</script>
 	<script src="script.js" type="text/javascript">
 	</script>
