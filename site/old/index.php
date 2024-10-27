@@ -880,13 +880,6 @@ op 07.02. om 13:31 uur
 -->
 </td></tr></table>
 
-<!-- Counter geïnstalleerd op 01/08/11 -->
-<a href="http://www.rapidcounter.com/signup.php" target="_top">
-<img border="0" alt="Counters" src="http://counter.rapidcounter.com/counter/1312324683/a"; ALIGN="middle" HSPACE="4" VSPACE="2">
-</a>
-<script src=http://counter.rapidcounter.com/script/1312324683></script>
-<br><a style="font-size:12" href="http://www.rapidcounter.com/" target="_top"><font style="font-size:12"color="#666666">Counters</font></a>
-
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
