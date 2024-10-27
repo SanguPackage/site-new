@@ -12,7 +12,7 @@ TW Tactics
 	- Fault folder: $DESKTOP\TWTactics
 - in site-new:
 	- add exe to site-new/site/api/
-	- update `send-ga-and-download.php`
+	- update sp-config-dist.json and sp-config.json
 	- update twtactics.jade and index.jade
 
 

@@ -3,5 +3,5 @@
 	"releaseDate": "//<!--@@INCLUDE CURRENTDATE //-->",
 	"contributors": "//<!--@@INCLUDE "contributors.txt" INDENT=0 //-->",
 	"twSimulator": "TW-Simulator-KPHS-v1.5.rar",
-	"twTactics": "TWTactics1.3.exe"
+	"twTactics": "TWTactics1.4.exe"
 }
