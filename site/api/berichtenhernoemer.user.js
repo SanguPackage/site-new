@@ -1,24 +1,3 @@
-<?php
-header('Content-type: application/javascript');
-
-include "ga/autoload.php";
-
-use UnitedPrototype\GoogleAnalytics;
-
-// Initilize GA Tracker
-$tracker = new GoogleAnalytics\Tracker('UA-30075487-3', 'sangu.be');
-
-// Assemble information
-$session = new GoogleAnalytics\Session();
-$visitor = new GoogleAnalytics\Visitor();
-$visitor->setIpAddress($_SERVER['REMOTE_ADDR']);
-$visitor->setUserAgent($_SERVER['HTTP_USER_AGENT']);
-$visitor->setScreenResolution('1024x768');
-
-$event = new GoogleAnalytics\Event('Downloads', 'Berichtenhernoemer', '2.3');
-
-$tracker->trackEvent($event, $session, $visitor);
-?>
 // ==UserScript==
 // @name					Berichthernoemer
 // @author				Grote Smurf / De Goede Fee (Edited by: Tjeerdo / .Arrogant)
@@ -247,10 +226,10 @@ function executeScript()
                     newName = newName.replace("{buitBegin}", "");
                     newName = newName.replace("{buitEind}", "");
                 }
-                
-                
+
+
                 newName = newName.replace("{dis}", "F"+parseInt(attacker.looptijd.fields));
-                
+
 
                 newName = newName.replace("{def dorp}", defender.village.name);
                 newName = newName.replace("{def xy}", defender.village.coord);
