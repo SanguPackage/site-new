@@ -1,4 +1,10 @@
 RewriteEngine On
+
+#Rewrite everything to https
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+#Nicer url redirects
 RewriteRule ^sangu-package$ ./sangu-package.html
 RewriteRule ^twtactics$ ./twtactics.html
 RewriteRule ^twtactics-install$ ./twtactics-install.html
