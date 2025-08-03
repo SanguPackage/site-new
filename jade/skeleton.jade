@@ -32,6 +32,13 @@ html
 			fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));
 
+		script(async src="https://www.googletagmanager.com/gtag/js?id=UA-30075487-3")
+		script.
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-30075487-3');
+
 		include skeleton-header
 
 		block content
