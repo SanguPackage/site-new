@@ -29,4 +29,9 @@ Access them in Pug as `#{contributors}`, etc.
 Deploying
 ---------
 
-See `DEPLOY.md`.
+```bash
+cp .env.example .env   # fill in FTP_PASSWORD
+bun run deploy         # builds + SFTP uploads ./site/
+```
+
+See `DEPLOY.md` for the broader release steps.

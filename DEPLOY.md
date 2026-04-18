@@ -30,5 +30,5 @@ sangupackage-release:
 Website
 -------
 
-- bun run build
-- ftp (yes, manually)
+- `cp .env.example .env` and fill in `FTP_PASSWORD` (once)
+- `bun run deploy` (builds + SFTP uploads `./site/` to the host)
