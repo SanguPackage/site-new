@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "Preserve",
+		"moduleResolution": "bundler",
+		"strict": true,
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"noEmit": true,
+		"allowImportingTsExtensions": true,
+		"types": ["node"]
+	},
+	"include": ["build.ts", "watch.ts"]
+}

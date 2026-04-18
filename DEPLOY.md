@@ -13,7 +13,7 @@ TW Tactics
 - in site-new:
 	- add exe to site-new/site/api/
 	- update sp-config-dist.json and sp-config.json
-	- update twtactics.jade and index.jade
+	- update twtactics.pug and index.pug
 
 
 Sangu Package
@@ -30,5 +30,5 @@ sangupackage-release:
 Website
 -------
 
-- gulp
+- bun run build
 - ftp (yes, manually)

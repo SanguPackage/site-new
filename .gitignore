@@ -1,6 +1,7 @@
 node_modules/
 site/*.html
 _notused
+.claude/settings.local.json
 
 site/video/
 site/api/sangupackage.user.js

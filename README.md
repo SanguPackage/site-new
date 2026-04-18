@@ -1,39 +1,35 @@
 Sangu.be website
 ================
 
-Building the website
---------------------
+Pug templates compiled to static HTML by a small [Bun](https://bun.com) + TypeScript script.
+
+Building
+--------
 
 ```bash
-npm install
-npm run build
+bun install
+bun run build   # one-shot compile
+bun run watch   # rebuild on .pug change
 ```
 
-### Gulp error
+Output lands in `./site/`.
 
-```
-const { Math, Object } = primordials;
-ReferenceError: primordials is not defined
-```
-
-Solution: Downgrade node to v10.13.0 ([more info](https://stackoverflow.com/questions/55921442/how-to-fix-referenceerror-primordials-is-not-defined-in-node-js))
-
-Testing the website
--------------------
+Serving locally
+---------------
 
 ```bash
-
+bun run serve
 ```
 
-and visit `http://127.0.0.1:8080/`
+Opens `http://127.0.0.1:8080/`.
 
 Configuration
 -------------
 
-Variables are stored in `./site/api/sp-config.json`  
-Accessible as: `#{contributors}` in jade.
+Template locals live in `./site/api/sp-config.json`.
+Access them in Pug as `#{contributors}`, etc.
 
-Deploying the website
----------------------
+Deploying
+---------
 
-See `deploy.md`
+See `DEPLOY.md`.

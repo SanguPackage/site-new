@@ -4,21 +4,17 @@
 	"description": "Website for SanguPackage and TWTactics",
 	"main": "index.js",
 	"scripts": {
-		"build": "gulp",
-		"serve": "http-server ./site -o",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"build": "bun run build.ts",
+		"watch": "bun run watch.ts",
+		"serve": "http-server ./site -o"
 	},
 	"author": "Wouter Van Schandevijl",
 	"license": "MIT",
-	"dependencies": {
-		"jade": "^1.9.2"
-	},
 	"devDependencies": {
-		"browserify": "^9.0.3",
-		"gulp": "^3.8.11",
-		"gulp-jade": "^1.0.0",
-		"gulp-plumber": "^1.0.0",
-		"gulp-util": "^3.0.4",
-		"http-server": "^0.11.1"
+		"@types/node": "^25.6.0",
+		"@types/pug": "^2.0.10",
+		"http-server": "^0.11.1",
+		"pug": "^3.0.4",
+		"typescript": "^6.0.3"
 	}
 }
