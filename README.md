@@ -8,20 +8,17 @@ Building
 
 ```bash
 bun install
-bun run build   # one-shot compile
-bun run watch   # rebuild on .pug change
+bun run build   # one-shot compile → ./site/
 ```
 
-Output lands in `./site/`.
-
-Serving locally
----------------
+Development
+-----------
 
 ```bash
-bun run serve
+bun run dev
 ```
 
-Opens `http://127.0.0.1:8080/`.
+Serves `./site/` on `http://localhost:8080/`, rebuilds and live-reloads on changes.
 
 Configuration
 -------------
