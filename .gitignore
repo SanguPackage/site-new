@@ -5,7 +5,8 @@ _notused
 .env
 
 site/video/
-site/api/sangupackage.user.js
-site/api/sp-config.json
 site/api/sangupackageversion.php
 site/api/twtactics-redirect.exe
+
+# Tracked as deployment inputs for the Docker/Coolify build (no more updates expected):
+# sp-config.json (consumed by build.ts) and sangupackage.user.js (served as a download).

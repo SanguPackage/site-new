@@ -1,0 +1,7 @@
+{
+	"version": "8.233.3",
+	"releaseDate": "27 april 2021",
+	"contributors": "De Goede Fee, Tjeerdo, cgrain, Hardcode93, martijn1279, Joeri Boons, ToxicDonut95",
+	"twSimulator": "../api/TW-Simulator-KPHS-v1.5.rar",
+	"twTactics": "../api/TWTactics1.4.exe"
+}
