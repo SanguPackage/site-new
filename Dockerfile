@@ -9,4 +9,6 @@ RUN bun run build
 FROM nginx:1-alpine
 COPY --from=build /app/site /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/conf.d/default.conf
+HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+  CMD wget -qO /dev/null http://localhost/ || exit 1
 EXPOSE 80
