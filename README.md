@@ -29,6 +29,6 @@ Access them in Pug as `#{contributors}`, etc.
 Deploying
 ---------
 
-Coolify
+Auto-deploys on push with [Coolify](https://coolify.lan.sangu.be)
 
 See `DEPLOY.md` for the broader release steps.

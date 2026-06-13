@@ -30,4 +30,4 @@ sangupackage-release:
 Website
 -------
 
-Coolify
+Auto-deploys on push with [Coolify](https://coolify.lan.sangu.be)
