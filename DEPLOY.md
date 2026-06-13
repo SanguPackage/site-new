@@ -30,5 +30,4 @@ sangupackage-release:
 Website
 -------
 
-- `cp .env.example .env` and fill in `FTP_PASSWORD` (once)
-- `bun run deploy` (builds + SFTP uploads `./site/` to the host)
+Coolify
